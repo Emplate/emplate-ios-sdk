@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.preserve_paths        = 'EmplateSDK/libEmplateSDK-debug-0.1.a'
   s.vendored_libraries    = 'EmplateSDK/libEmplateSDK-debug-0.1.a'
   s.ios.deployment_target = '8.0'
-  s.license      = 'Emplate License'
+  s.license               = 'Emplate License'
   s.dependency 'RestKit'
 end
