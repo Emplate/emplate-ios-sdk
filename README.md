@@ -72,5 +72,17 @@ So it looks like this:
 @interface ViewController : UIViewController <EMBeaconManagerDelegate>
 ```
 
+In your implementation of the ViewController you need to implement a delegate method for the BeaconManager. The method is _closestBeaconChangedTo_, and it's called every time the BeaconManager detects that the closest beacon has changed to a new one. Implement the method like this:
+
+``` objective-c
+- (void)beaconManager:(EMBeaconManager *)beaconManager closestBeaconChangedTo:(EMBeacon *)beacon
+{
+    if (beacon) NSLog(@"The closest beacon is: %@", beacon.name);
+    else NSLog(@"No beacon found");
+}
+```
+
+If a beacon is found you will get a _EMBeacon_ object which have different properties (eg. beaconId and name). If no beacon is found you will get a _nil_.
+
 ## Who do I talk to?
 Feel free to contact Søren Gregersen from Emplate ApS if you have any questions about this SDK. Catch me on soren@emplate.it or +45 5056 1337.
