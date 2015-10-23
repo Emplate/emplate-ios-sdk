@@ -17,7 +17,7 @@ Simply install the Emplate SDK by adding this line to your Podfile:
 Remember to open the Xcode workspace and not the project file
 
 ### Including the SDK in your app
-By adding the following line to your ViewController, you'll get access to the whole SDK
+By adding the following line to your ViewController.h, you'll get access to the whole SDK
 
 `#import 'EmplateSDK.h'`
 
@@ -59,7 +59,15 @@ Use the method `fetchAllBeaconsFromOrganization:organizationId`, and put in your
 ```
 
 ### Scanning for beacons
-The service which handle all the beacons scanning stuff is _EMBeaconManager_.
+The service which handle all the beacons scanning stuff is _EMBeaconManager_. To use the beacon service you need to add `<EMBeaconManagerDelegate>` in the end of this line:
+
+``` objective-c
+@interface ViewController : UIViewController
+```
+So it looks like this:
+``` objective-c
+@interface ViewController : UIViewController <EMBeaconManagerDelegate>
+```
 
 ## Who do I talk to?
 Feel free to contact Søren Gregersen from Emplate ApS if you have any questions about this SDK. Catch me on soren@emplate.it or +45 5056 1337.
