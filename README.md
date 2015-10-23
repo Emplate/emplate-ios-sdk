@@ -33,7 +33,7 @@ In order to use beacons in your app, you need to add a text about why you need t
 
 ![alt text](https://dl.dropboxusercontent.com/u/2618630/EmplateSDK/UserLocation.png "UserLocation")
 
-Note the you have to use the AlwaysUsage, because we need to use the location when the user puts the app in the background, since we're sending notifications when the user enters a beacons region.
+_Note the you have to use the AlwaysUsage, because we need to use the location when the user puts the app in the background, since we're sending notifications when the user enters a beacons region._
 
 ## So how does this work?
 To show you how to get going with the SDK in a fast way, we will show you some simple examlpe of how to load data from the API, and how to start the scanning of beacons.
@@ -41,7 +41,7 @@ To show you how to get going with the SDK in a fast way, we will show you some s
 ### Get data from our API
 Right now you can get details about your organization (EMOrganization), all your beacons (EMBeacon) and the beacon's posts (EMPost).
 
-The class which is handling all the communication with the API is the EMApiService. To start using it, you need to create a new object from the class:
+The class which is handling all the communication with the API is the _EMApiService_. To start using it, you need to create a new object from the class:
 
 ``` objective-c
 EMApiService *apiService = [[EMApiService alloc] init];
@@ -57,5 +57,9 @@ Use the method `fetchAllBeaconsFromOrganization:organizationId`, and put in your
     NSLog(@"Error: %@", error);
 }];
 ```
+
+### Scanning for beacons
+The service which handle all the beacons scanning stuff is _EMBeaconManager_.
+
 ## Who do I talk to?
 Feel free to contact Søren Gregersen from Emplate ApS if you have any questions about this SDK. Catch me on soren@emplate.it or +45 5056 1337.
