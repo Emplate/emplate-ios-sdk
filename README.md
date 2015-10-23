@@ -25,7 +25,7 @@ Remember to open the Xcode workspace and not the project file
 ### Including the SDK in your app
 By adding the following line to your ViewController.h, you'll get access to the whole SDK
 
-`#import 'EmplateSDK.h'`
+`#import "EmplateSDK.h"`
 
 
 #### Things to add to your Info.plist
