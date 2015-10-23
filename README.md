@@ -54,12 +54,26 @@ EMApiService *apiService = [[EMApiService alloc] init];
 Use the method `fetchAllBeaconsFromOrganization:organizationId`, and put in your organizationId from the Emplate Control Panel. The method has completion and failure blocks which gets fired when the request is completed or failed.
 
 ``` objective-c
-[apiService fetchBeaconsFromOrganization:39 completionBlock:^(NSArray *beacons) {
+[apiService fetchBeaconsFromOrganization:42 completionBlock:^(NSArray *beacons) {
     NSLog(@"This is all your beacons: %@", beacons);
 } failureBlock:^(NSError *error) {
     NSLog(@"Error: %@", error);
 }];
 ```
+
+The completion block will give you an array of EMBeacon objects that you can start scanning on.
+
+#### Load all posts for a beacon
+Use the method `fetchPostsFromBeacon:beaconId`, and put in the beaconId of the beacon you want to get all posts from. Like all other fetch method in the _EMApiService_ there will be a completion and failure block. Get all posts from a beacon in this way:
+``` objective-c
+[apiService fetchPostsFromBeacon:1337 completionBlock:^(NSArray *posts) {
+    NSLog(@"This is all posts from your beacon: %@", posts);
+} failureBlock:^(NSError *error) {
+    NSLog(@"Error: %@", error);
+}];
+```
+
+The completion block will give you an array of EMPost objects. The EMPost class has different properties like the name and content. The content property is a HTML-string generated frm the Emplate Control Panel. This HTML-string can easily be loaded into a webview.
 
 ### Scanning for beacons
 The service which handle all the beacons scanning stuff is _EMBeaconManager_. To use the beacon service you need to add `<EMBeaconManagerDelegate>` in the end of this line:
@@ -82,7 +96,7 @@ In your implementation of the ViewController you need to implement a delegate me
 }
 ```
 
-If a beacon is found you will get a _EMBeacon_ object which have different properties (eg. beaconId and name). If no beacon is found you will get a _nil_.
+If a beacon is found you will get an _EMBeacon_ object which have different properties (eg. beaconId and name). If no beacon is found you will get a _nil_.
 
 To start searching for beacons you will first have to set the delegate to the ViewContoller itself. Add this line somewhere in you ViewController (eg. in viewDidLoad)
 ``` objective-c
