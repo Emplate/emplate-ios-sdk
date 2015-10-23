@@ -30,7 +30,7 @@ By adding the following line to your ViewController.h, you'll get access to the 
 
 #### Things to add to your Info.plist
 ##### Communicating with our API
-Since our API at the Hackathon don't have a SSL certificate, you need to specify that your app is allowed to use this potentially unsecure server to transfer data. To do this, you need to add the following lines:
+Since our API at the Hackathon don't have a SSL certificate, you need to specify that your app is allowed to use this potentially unsecure server to transfer data. To do this, you need to add the following lines to your Info.plist file:
 
 ![alt text](https://dl.dropboxusercontent.com/u/2618630/EmplateSDK/NSAppTransportSecurity.png "NSAppTransportSecurity")
 
