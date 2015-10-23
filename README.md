@@ -79,7 +79,7 @@ Use the method `fetchPostsFromBeacon:beaconId`, and put in the beaconId of the b
 The completion block will give you an array of EMPost objects. The EMPost class has different properties like the name and content. The content property is a HTML-string generated frm the Emplate Control Panel. This HTML-string can easily be loaded into a webview.
 
 ### Scanning for beacons
-The service which handle all the beacons scanning stuff is _EMBeaconManager_. To use the beacon service you need to add `<EMBeaconManagerDelegate>` in the end of this line:
+The service which handle all the beacons scanning stuff is _EMBeaconManager_. To use the beacon service you need to add `<EMBeaconManagerDelegate>` in the end of this line in your ViewController.h:
 
 ``` objective-c
 @interface ViewController : UIViewController
