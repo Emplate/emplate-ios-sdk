@@ -14,7 +14,12 @@
 @property (strong) NSString *name;
 @property (strong) NSString *uuidString;
 @property (strong, readonly) NSUUID *uuid;
-@property (assign) NSUInteger major;
-@property (assign) NSUInteger minor;
+@property (assign) NSNumber *major;
+@property (assign) NSNumber *minor;
+
+@property (readonly) NSString *identifier;
+
+@property (nonatomic, readonly) NSString *notificationMessage;
+@property (nonatomic, readonly) BOOL active;
 
 @end

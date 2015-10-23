@@ -8,6 +8,7 @@
 
 // Service
 #import "EMApiService.h"
+#import "EMBeaconManager.h"
 
 // Models
 #import "EMOrganization.h"
