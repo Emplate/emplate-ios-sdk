@@ -84,5 +84,17 @@ In your implementation of the ViewController you need to implement a delegate me
 
 If a beacon is found you will get a _EMBeacon_ object which have different properties (eg. beaconId and name). If no beacon is found you will get a _nil_.
 
+To start searching for beacons you will first have to set the delegate to the ViewContoller itself. Add this line somewhere in you ViewController (eg. in viewDidLoad)
+``` objective-c
+[EMBeaconManager sharedManager].delegate = self;
+```
+
+To start the searching you need an array of EMBeacon objects, and give it to the _startSearchingForBeacons_ method on the BeaconManager like this:
+``` objective-c
+[[EMBeaconManager sharedManager] startSearchingForBeacons:beacons];
+```
+
+Now the search of beacons has begun. Every time the closest beacon change, the delegate will run, and you can make any thing happen. When the app is in the background and enters the region of a beacon a local notification will be send to the user.
+
 ## Who do I talk to?
 Feel free to contact Søren Gregersen from Emplate ApS if you have any questions about this SDK. Catch me on soren@emplate.it or +45 5056 1337.
