@@ -89,7 +89,7 @@ So it looks like this:
 @interface ViewController : UIViewController <EMBeaconManagerDelegate>
 ```
 
-In your implementation of the ViewController you need to implement a delegate method for the BeaconManager. The method is _closestBeaconChangedTo_, and it's called every time the BeaconManager detects that the closest beacon has changed to a new one. Implement the method like this:
+In your implementation of the ViewController you need to implement a delegate method for the BeaconManager. The method is _closestBeaconChangedTo_, and it's called every time the BeaconManager detects that the closest beacon has changed to a new one. Implement the method in the end of the ViewController.m like this:
 
 ``` objective-c
 - (void)beaconManager:(EMBeaconManager *)beaconManager closestBeaconChangedTo:(EMBeacon *)beacon
