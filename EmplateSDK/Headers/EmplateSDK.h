@@ -7,11 +7,20 @@
 //
 
 // Service
-#import "EMApiService.h"
-#import "EMBeaconManager.h"
+#import "EMPAnalyticsService.h"
+#import "EMPApiService.h"
+#import "EMPBeaconManager.h"
+#import "EMPInboxManager.h"
+#import "EMPSubscriptionManager.h"
 
 // Models
-#import "EMOrganization.h"
-#import "EMBeacon.h"
-#import "EMPost.h"
-#import "EMPostPeriod.h"
+#import "EMPBeacon.h"
+#import "EMPBeaconView.h"
+#import "EMPOrganization.h"
+#import "EMPPost.h"
+#import "EMPPostPeriod.h"
+#import "EMPPostView.h"
+#import "EMPAudience.h"
+#import "EMPShopCategory.h"
+#import "EMPShop.h"
+#import "EMPGuest.h"

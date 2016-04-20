@@ -1,15 +1,19 @@
 Pod::Spec.new do |s|
   s.name                  = "EmplateSDK"
-  s.version               = "0.1"
-  s.summary               = "EmplateSDK"
+  s.version               = "0.9.0"
+  s.summary               = "The Emplate iOS SDK."
   s.homepage              = "http://emplate.it"
   s.author                = { "Emplate ApS" => "http://emplate.it" }
   s.platform              = :ios, '8.0'
-  s.source                = { :git => "https://github.com/Emplate/emplate-ios-sdk.git", :tag => "0.1.0" }
+  s.source                = { :git => "https://github.com/Emplate/emplate-ios-sdk.git", :tag => s.version.to_s }
   s.source_files          = 'EmplateSDK/Headers/*.h'
-  s.preserve_paths        = 'EmplateSDK/libEmplateSDK-0.1.a'
-  s.vendored_libraries    = 'EmplateSDK/libEmplateSDK-0.1.a'
+  s.preserve_paths        = 'EmplateSDK/libEmplateSDK.a'
+  s.vendored_libraries    = 'EmplateSDK/libEmplateSDK.a'
   s.ios.deployment_target = '8.0'
   s.license               = 'License'
-  s.dependency 'RestKit'
+  s.requires_arc          = true
+  s.frameworks            = 'UIKit', 'Foundation', 'SystemConfiguration', 'MobileCoreServices', 'CoreBluetooth', 'CoreLocation'
+  s.dependency 'RestKit', '~>0.26'
+  s.dependency 'Reachability', '~>3.2'
+  s.dependency 'SDWebImage', '~>3.7'
 end
