@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EMPApiService Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">EmplateSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Emplate ApS</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedService">+ sharedService</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/createGuest:completionBlock:failureBlock:">- createGuest:completionBlock:failureBlock:</option>
+		
+		<option value="//api/name/sendLoggedViews:typeOfView:completionBlock:failureBlock:">- sendLoggedViews:typeOfView:completionBlock:failureBlock:</option>
+		
+		<option value="//api/name/updateSubscriptions:completionBlock:failureBlock:">- updateSubscriptions:completionBlock:failureBlock:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EMPApiService Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EMPApiService.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createGuest:completionBlock:failureBlock:" title="createGuest:completionBlock:failureBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createGuest:completionBlock:failureBlock:">&ndash;&nbsp;createGuest:completionBlock:failureBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a new guest (get a new guestId)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createGuest:(EMPGuest *)<em>guest</em> completionBlock:(EMPGuestBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>guest</code></th>
+						<td><p>The new <a href="../Classes/EMPGuest.html">EMPGuest</a> object (should not have a guestId)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>A block to be called when finished</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failureBlock</code></th>
+						<td><p>A block to be called if something went wrong</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPApiService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendLoggedViews:typeOfView:completionBlock:failureBlock:" title="sendLoggedViews:typeOfView:completionBlock:failureBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendLoggedViews:typeOfView:completionBlock:failureBlock:">&ndash;&nbsp;sendLoggedViews:typeOfView:completionBlock:failureBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Send logged views from the AnalyticsManager</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendLoggedViews:(NSSet *)<em>views</em> typeOfView:(TypeOfView)<em>typeOfView</em> completionBlock:(EMPArrayBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>views</code></th>
+						<td><p>A set of PostViews or BeaconViews</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>typeOfView</code></th>
+						<td><p>The type of views to send <a href="../Constants/TypeOfView.html">TypeOfView</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>A block to be called when finished</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failureBlock</code></th>
+						<td><p>A block to be called if something went wrong</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Is used to send PostViews and BeaconViews</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/EMPAnalyticsService.html">EMPAnalyticsService</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPApiService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateSubscriptions:completionBlock:failureBlock:" title="updateSubscriptions:completionBlock:failureBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateSubscriptions:completionBlock:failureBlock:">&ndash;&nbsp;updateSubscriptions:completionBlock:failureBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update shop subscriptions for the user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateSubscriptions:(NSArray *)<em>subscriptions</em> completionBlock:(EMPBasicBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>subscriptions</code></th>
+						<td><p>An array of shopIds</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>A block to be called when finished</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failureBlock</code></th>
+						<td><p>A block to be called if something went wrong</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPApiService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sharedService" title="sharedService"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedService">+&nbsp;sharedService</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The shared instance of EMPApiService</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (EMPApiService *)sharedService</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>EMPApiService</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This should be used for all API operations</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPApiService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Emplate ApS. All rights reserved. Updated: 2016-04-21</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
