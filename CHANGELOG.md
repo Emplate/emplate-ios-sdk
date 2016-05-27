@@ -1,7 +1,6 @@
 # Change Log
 
 ## Version 0.9.1 (2016-05-27)
-Removed changelog.md from the build phases
 Implemented all models, services and managers.
 We still need some few changes before the version bumps to 1.0.0
 
