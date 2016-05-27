@@ -3,7 +3,7 @@
 This is the public Emplate iOS SDK. Use this SDK to interact with the Emplate Platform, and integrate Emplate into you new or existing apps for iOS.
 
 ## How do I get going?
-You can install the Emplate SDK into your Xcode project using CocoaPods. If you're not familiar with CocoaPods, you should take a look at their "[Getting started with CocoaPods](https://guides.cocoapods.org/using/getting-started.html)". It's awesome!
+You can install the Emplate SDK into your Xcode project using CocoaPods. If you're not familiar with CocoaPods, you should take a look at their "[Getting started with CocoaPods](https://guides.cocoapods.org/using/getting-started.html)".
 
 ### Install the pod
 Simply install the Emplate SDK by adding this line to your Podfile:
@@ -17,7 +17,7 @@ Simply install the Emplate SDK by adding this line to your Podfile:
 Remember to open the Xcode workspace and not the project file
 
 ### Including the SDK in your app
-By adding the following line to your ViewController.h, you'll get access to the whole SDK
+By adding the following line to your ViewController or AppDelegate, you'll get access to the whole SDK
 
 `#import "EmplateSDK.h"`
 
