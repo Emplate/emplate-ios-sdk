@@ -2,12 +2,6 @@
 
 This is the public Emplate iOS SDK. Use this SDK to interact with the Emplate Platform, and integrate Emplate into you new or existing apps for iOS.
 
-## This is a pre release version - take care
-Please be aware that this is an early pre-release of our iOS SDK. We would like to get as much feedback on it as we can, so we're more qualified to improve it in a way that make sense for most developers need. So please feel free to contact us and tell what you think.
-Something aren't documented yet, and some features aren't implemented yet. If you have any specific needs, please tell us what you need, and we will try to serve you.
-
-If you're interested in our API, please take a look at our [documentation](http://docs.emplateapiversion2.apiary.io). Please notice that this documentation is still work in progress
-
 ## How do I get going?
 You can install the Emplate SDK into your Xcode project using CocoaPods. If you're not familiar with CocoaPods, you should take a look at their "[Getting started with CocoaPods](https://guides.cocoapods.org/using/getting-started.html)". It's awesome!
 
