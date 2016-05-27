@@ -124,7 +124,7 @@ To start the searching you need an array of EMPBeacon objects, and give it to th
 Now the search of beacons has begun. Every time the closest beacon change, the delegate will run, and you can make any thing happen. When the app is in the background and enters the region of a beacon a local notification will be send to the user.
 
 ## Appledocs
-If you want to see the full documentation of the SDK, you can visit our [EmplateSDK Reference](http://emplate.github.io/emplate-ios-sdk/).
+If you want to see the full documentation of the SDK, you can visit our [EmplateSDK Reference](http://emplate.github.io/emplate-ios-sdk/){:target="_blank"}.
 
 ## I have more questions - where do I go?
 Feel free to contact Søren Gregersen from Emplate ApS if you have any questions about this SDK. Catch me on soren@emplate.it or +45 5056 1337.
