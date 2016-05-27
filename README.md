@@ -89,7 +89,7 @@ Use the method `fetchPostsFromBeacon:beaconId`, and put in the beaconId of the b
 The completion block will give you an array of EMPost objects. The EMPost class has different properties like the name and content. The content property is a HTML-string generated frm the Emplate Control Panel. This HTML-string can easily be loaded into a webview.
 
 ### Scanning for beacons
-The service which handle all the beacons scanning stuff is _EMPBeaconManager_. To use the beacon service you need to add `<EMPBeaconManagerDelegate>` in the end of this line in your ViewController.h:
+The service which handle all the beacons scanning stuff is _EMPBeaconManager_. To use the beacon manager you need to add `<EMPBeaconManagerDelegate>` in the end of this line in your ViewController.h:
 
 ``` objective-c
 @interface ViewController : UIViewController
@@ -99,10 +99,10 @@ So it looks like this:
 @interface ViewController : UIViewController <EMPBeaconManagerDelegate>
 ```
 
-In your implementation of the ViewController you need to implement a delegate method for the BeaconManager. The method is _closestBeaconChangedTo_, and it's called every time the BeaconManager detects that the closest beacon has changed to a new one. Implement the method in the end of the ViewController.m like this:
+In your implementation of the ViewController you need to implement a delegate method for the BeaconManager. The method is _beaconManagerClosestBeaconChangedTo:_, and it's called every time the BeaconManager detects that the closest beacon has changed to a new one. Implement the method in the end of the ViewController.m like this:
 
 ``` objective-c
-- (void)beaconManager:(EMPBeaconManager *)beaconManager closestBeaconChangedTo:(EMPBeacon *)beacon
+- (void)beaconManagerClosestBeaconChangedTo:(EMPBeacon *)beacon {
 {
     if (beacon) NSLog(@"The closest beacon is: %@", beacon.name);
     else NSLog(@"No beacon found");
@@ -113,15 +113,27 @@ If a beacon is found you will get an _EMPBeacon_ object which has different prop
 
 To start searching for beacons you will first have to set the delegate to the ViewContoller itself. Add this line somewhere in you ViewController (eg. in viewDidLoad)
 ``` objective-c
-[EMBeaconManager sharedManager].delegate = self;
+[EMPBeaconManager sharedManager].delegate = self;
 ```
 
-To start the searching you need an array of EMPBeacon objects, and give it to the _startSearchingForBeacons_ method on the BeaconManager like this:
+You will also need the user to authorize the permission for using the location. This can be done directly from the beacon manager:
+```objective-c
+[[EMPBeaconManager sharedManager] requestLocationAlwaysAuthorization];
+```
+
+To start the searching you need an array of EMPBeacon objects, and give it to the _startSearchingForBeacons:_ method on the BeaconManager like this:
 ``` objective-c
 [[EMPBeaconManager sharedManager] startSearchingForBeacons:beacons];
 ```
 
-Now the search of beacons has begun. Every time the closest beacon change, the delegate will run, and you can make any thing happen. When the app is in the background and enters the region of a beacon a local notification will be send to the user.
+Now the search of beacons has begun. Every time the closest beacon change, the delegate will get called, and you can make any thing happen. 
+
+If the user has authorized permissions to notifications, the BeaconManager will send a notification when the app is in background, and the phone is entering a beacon region.
+
+You can request for notifications directly from the beacon manager. It's done in the same way as the request for location authorization:
+```objective-c
+[[EMPBeaconManager sharedManager] requestPermissionsForNotifications];
+```
 
 ## Appledocs
 If you want to see the full documentation of the SDK, you can visit our [EmplateSDK Reference](http://emplate.github.io/emplate-ios-sdk/).
