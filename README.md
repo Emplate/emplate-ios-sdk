@@ -54,39 +54,35 @@ Open your Info.plist as source code, and paste the following snippet in. Choose 
 ## So how does this work?
 To show you how to get going with the SDK in a fast way, we will show you some simple examples of how to load data from the API, and how to start the searching for beacons.
 
-### Get data from our API
-Right now you can get details about your organization (EMPOrganization), all your beacons (EMPBeacon) and the beacon's posts (EMPPost).
-
-The class which is handling all the communication with the API is the _EMPApiService_. To start using it, you need to create a new object from the class:
-
-``` objective-c
-EMApiService *apiService = [[EMApiService alloc] init];
-```
+### Get data from the Emplate API
+To get data from the Emplate API you can use the EMPApiService class. The API service will depend on the selected API environment you have set in the Info.plist. Use the sharedService singleton to perform the different requests.
 
 #### Load all beacons from your organization
-Use the method `fetchAllBeaconsFromOrganization:organizationId`, and put in your organizationId from the Emplate Control Panel. The method has completion and failure blocks which gets fired when the request is completed or failed.
+Use the method `getBeaconsFromOrganization:organizationId`, and put in your organizationId from the Emplate Control Panel. The method has completion and failure blocks which gets fired when the request is completed or failed.
 
 ``` objective-c
-[apiService fetchBeaconsFromOrganization:42 completionBlock:^(NSArray *beacons) {
-    NSLog(@"This is all your beacons: %@", beacons);
-} failureBlock:^(NSError *error) {
-    NSLog(@"Error: %@", error);
-}];
+[[EMPApiService sharedService] getBeaconsFromOrganization:@1 completionBlock:^(NSArray *beacons) {
+        NSLog(@"Downloaded beacons completed!");
+    } failureBlock:^(NSError *error) {
+        NSLog(@"Failed to get beacons and posts");
+    }];
 ```
 
-The completion block will give you an array of EMBeacon objects that you can start scanning on.
+The completion block will give you an array of EMPBeacon objects that you can start scanning on.
+
+If you want to get both beacons and their posts in one call, use the _getBeaconsAndPostsFromOrganization:organizationId_ in the same way as above.
 
 #### Load all posts for a beacon
 Use the method `fetchPostsFromBeacon:beaconId`, and put in the beaconId of the beacon you want to get all posts from. Like all other fetch method in the _EMPApiService_ there will be a completion and failure block. Get all posts from a beacon in this way:
 ``` objective-c
-[apiService fetchPostsFromBeacon:1337 completionBlock:^(NSArray *posts) {
-    NSLog(@"This is all posts from your beacon: %@", posts);
+[[EMPApiService sharedService] getPostsFromBeacon:@42 completionBlock:^(NSArray *posts) {
+	NSLog(@"This is all posts from your beacon: %@", posts);
 } failureBlock:^(NSError *error) {
-    NSLog(@"Error: %@", error);
+	NSLog(@"Error: %@", error);
 }];
 ```
 
-The completion block will give you an array of EMPost objects. The EMPost class has different properties like the name and content. The content property is a HTML-string generated frm the Emplate Control Panel. This HTML-string can easily be loaded into a webview.
+The completion block will give you an array of EMPPost objects. The EMPPost class has different properties like the name and content. The content property is a HTML-string generated from the Emplate Control Panel. This HTML-string can easily be loaded into a webview.
 
 ### Scanning for beacons
 The service which handle all the beacons scanning stuff is _EMPBeaconManager_. To use the beacon manager you need to add `<EMPBeaconManagerDelegate>` in the end of this line in your ViewController.h:
