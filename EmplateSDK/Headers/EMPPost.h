@@ -9,6 +9,9 @@
 @import Foundation;
 #import "EMPDefines.h"
 
+/**
+ *    This is the EMPPost model. EMPPost objects contains the details for the post created in the Emplate Control Panel. EMPPost objects can also be assigned to EMPBeacon objects.
+ */
 @interface EMPPost : NSObject
 
 /**
@@ -25,7 +28,6 @@
 @property (nonatomic, strong) NSString *content;
 /**
  *    @brief A URL for the organization image
- *    @see getThumbnailWithCompletion:withFailureBlock:
  */
 @property (nonatomic, strong) NSURL *thumbnailURL;
 /**
@@ -43,12 +45,14 @@
  *    @see EMPPostPeriod
  */
 @property (readonly) BOOL active;
+
 /**
- *    @brief A method for getting the post thumbnail in a completion block
+ *    @brief Get the URL for the thumbnail in a certain size.
  *
- *    @param completionBlock a completion block called when loading is finish
- *    @param failureBlock    a failure block called if something went wrong
+ *    @param imageSize One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull
+ *
+ *    @return The URL for the post thumbnail in the given size.
  */
-- (void)getThumbnailWithCompletion:(EMPImageBlock)completionBlock withFailureBlock:(EMPErrorBlock)failureBlock;
+- (NSURL *)thumbnailURLWithSize:(EMPImageSize)imageSize;
 
 @end

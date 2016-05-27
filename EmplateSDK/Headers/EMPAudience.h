@@ -8,6 +8,9 @@
 
 @import Foundation;
 
+/**
+ *    This is the EMPAudience Model
+ */
 @interface EMPAudience : NSObject
 
 /**

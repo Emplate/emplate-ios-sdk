@@ -7,7 +7,12 @@
 //
 
 @import Foundation;
+@class EMPPost;
+@class EMPAudience;
 
+/**
+ *    This is the EMPPostView Model. This model is used to track analytics when users are viewing EMPPost objects.
+ */
 @interface EMPPostView : NSObject <NSCoding>
 
 /**
@@ -33,15 +38,5 @@
  *    @brief The date/time when the view of the post ended
  */
 @property (nonatomic, strong) NSDate *timeOut;
-
-/**
- *    @brief Init a new post view with postId and audienceId
- *
- *    @param postId     The unique id of the viewed post
- *    @param audienceId The unique id of the viewed post's audience
- *
- *    @return A new EMPPostView with postId and audienceId set
- */
-+ (EMPPostView *)postViewForPostId:(NSNumber *)postId audienceId:(NSNumber *)audienceId;
 
 @end

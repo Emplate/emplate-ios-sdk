@@ -43,6 +43,8 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 
 	
 	
@@ -78,9 +80,9 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/getDirectionsWithCompletion:withFailureBlock:">- getDirectionsWithCompletion:withFailureBlock:</option>
+		<option value="//api/name/directionsURLWithSize:">- directionsURLWithSize:</option>
 		
-		<option value="//api/name/getImageWithCompletion:withFailureBlock:">- getImageWithCompletion:withFailureBlock:</option>
+		<option value="//api/name/imageURLWithSize:">- imageURLWithSize:</option>
 		
 	</optgroup>
 	
@@ -112,6 +114,14 @@
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This is the EMPShop Model. The EMPShop objects contains information about the shops created in the Emplate Control Panel. The <a href="../Classes/EMPSubscriptionManager.html">EMPSubscriptionManager</a> is used to subscribe the user (<a href="../Classes/EMPGuest.html">EMPGuest</a>) to one or more shops.</p>
+					</div>
+					
+					
 
 					
 					
@@ -461,8 +471,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getImageWithCompletion:withFailureBlock:" title="getImageWithCompletion:withFailureBlock:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getImageWithCompletion:withFailureBlock:">&ndash;&nbsp;getImageWithCompletion:withFailureBlock:</a></code>
+	<a name="//api/name/imageURLWithSize:" title="imageURLWithSize:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/imageURLWithSize:">&ndash;&nbsp;imageURLWithSize:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -472,12 +482,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>A method for getting the shop image in a completion block</p>
+				<p>Get the URL for the image in a certain size.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)getImageWithCompletion:(EMPImageBlock)<em>completionBlock</em> withFailureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (NSURL *)imageURLWithSize:(EMPImageSize)<em>imageSize</em></code></div>
 
 		    
 			
@@ -486,19 +496,19 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>completionBlock</code></th>
-						<td><p>a completion block called when loading is finish</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failureBlock</code></th>
-						<td><p>a failure block called if something went wrong</p></td>
+						<th scope="row" class="argument-name"><code>imageSize</code></th>
+						<td><p>One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull</p></td>
 					</tr>
 				
 				</table>
 			</div>
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The URL for the shop image in the given size.</p>
+			</div>
 			
 
 			
@@ -519,8 +529,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getDirectionsWithCompletion:withFailureBlock:" title="getDirectionsWithCompletion:withFailureBlock:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getDirectionsWithCompletion:withFailureBlock:">&ndash;&nbsp;getDirectionsWithCompletion:withFailureBlock:</a></code>
+	<a name="//api/name/directionsURLWithSize:" title="directionsURLWithSize:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/directionsURLWithSize:">&ndash;&nbsp;directionsURLWithSize:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -530,12 +540,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>A method for getting the shop directions image in a completion block</p>
+				<p>Get the URL for the directions image in a certain size.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)getDirectionsWithCompletion:(EMPImageBlock)<em>completionBlock</em> withFailureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (NSURL *)directionsURLWithSize:(EMPImageSize)<em>imageSize</em></code></div>
 
 		    
 			
@@ -544,19 +554,19 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>completionBlock</code></th>
-						<td><p>a completion block called when loading is finish</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failureBlock</code></th>
-						<td><p>a failure block called if something went wrong</p></td>
+						<th scope="row" class="argument-name"><code>imageSize</code></th>
+						<td><p>One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull</p></td>
 					</tr>
 				
 				</table>
 			</div>
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The URL for the directions image in the given size.</p>
+			</div>
 			
 
 			
@@ -591,7 +601,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Emplate ApS. All rights reserved. Updated: 2016-04-21</p>
+						<p class="copyright">Copyright &copy; 2016 Emplate ApS. All rights reserved. Updated: 2016-05-27</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

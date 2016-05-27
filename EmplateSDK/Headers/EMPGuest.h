@@ -8,6 +8,9 @@
 
 @import Foundation;
 
+/**
+ *    @brief This is the EMPGuest Model. The EMPGuest objects contains only the unique id for the guest. See EMPAnalyticsService for more details about EMPGuest.
+ */
 @interface EMPGuest : NSObject
 
 /**

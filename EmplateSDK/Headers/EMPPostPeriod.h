@@ -8,6 +8,9 @@
 
 @import Foundation;
 
+/**
+ *    This is the EMPPostPeriod Model. The EMPPostPeriod objects contains information about when a given EMPPost should be active. This is determined by a start and stop date/time. Post periods are assigned to af EMPPost.
+ */
 @interface EMPPostPeriod : NSObject
 
 /**

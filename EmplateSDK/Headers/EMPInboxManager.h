@@ -9,6 +9,13 @@
 @import Foundation;
 #import "EMPPost.h"
 
+/**
+ *    This is the EMPInboxManager which is used to built an inbox of EMPPost objects in the app. EMPPost objects in the EMPInboxManager can be marked as read/unread. As default all posts are marked as unread when added to the inbox. 
+ *
+ *    If you've set up your Info.plist the app will also update the AppIcon badge on the homescreen corresponding to the current number of unread active EMPPost objects in the inbox.
+ *
+ *    *Use the sharedManager to perform the methods in this manager.*
+ */
 @interface EMPInboxManager : NSObject
 
 @property (strong, readwrite) NSMutableArray<EMPPost *> *cachedPosts;

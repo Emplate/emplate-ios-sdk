@@ -9,6 +9,9 @@
 @import Foundation;
 @import CoreLocation;
 
+/**
+ *    This is the EMPBeacon Model. The EMPBeacon objects contains information about the physical beacons, and can have EMPPost objects assigned in the posts array.
+ */
 @interface EMPBeacon : NSObject
 
 /**

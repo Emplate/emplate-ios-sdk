@@ -9,6 +9,9 @@
 @import UIKit;
 #import "EMPDefines.h"
 
+/**
+ *    This is the EMPOrganization Model. The EMPOrganization objects contains information about the organization from the Emplate API.
+ */
 @interface EMPOrganization : NSObject
 /**
  *    @brief A unique id
@@ -18,7 +21,6 @@
  *    @brief The name of the organization
  */
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *chooseButtonText; // TODO: Remove this
 /**
  *    @brief A description text about the organization
  */
@@ -52,12 +54,10 @@
 @property (nonatomic, strong) NSArray *audiences;
 /**
  *    @brief A URL for the organization image
- *    @see getImageInSize:withCompletion:withFailureBlock:
  */
 @property (nonatomic, strong) NSURL *imageURL;
 /**
  *    @brief A URL for the organization logo
- *    @see getLogoInSize:withCompletion:withFailureBlock:
  */
 @property (nonatomic, strong) NSURL *logoURL;
 /**
@@ -68,22 +68,21 @@
  *    @brief The primary organization color
  */
 @property (readonly) UIColor *secondaryColor;
-
 /**
- *    @brief A method for getting the organization image in a completion block
+ *    @brief Get the URL for the image in a certain size.
  *
- *    @param imageSize       EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull
- *    @param completionBlock a completion block called when loading is finish
- *    @param failureBlock    a failure block called if something went wrong
+ *    @param imageSize One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull
+ *
+ *    @return The URL for the organization image in the given size.
  */
-- (void)getLogoInSize:(NSString *)imageSize withCompletion:(EMPImageBlock)completionBlock withFailureBlock:(EMPErrorBlock)failureBlock;
+- (NSURL *)imageURLWithSize:(EMPImageSize)imageSize;
 /**
- *    @brief A method for getting the organization logo in a completion block
+ *    @brief Get the URL for the logo in a certain size.
  *
- *    @param imageSize       EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull
- *    @param completionBlock a completion block called when loading is finish
- *    @param failureBlock    a failure block called if something went wrong
+ *    @param imageSize One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull
+ *
+ *    @return The URL for the organization logo in the given size.
  */
-- (void)getImageInSize:(NSString *)imageSize withCompletion:(EMPImageBlock)completionBlock withFailureBlock:(EMPErrorBlock)failureBlock;
+- (NSURL *)logoURLWithSize:(EMPImageSize)imageSize;
 
 @end

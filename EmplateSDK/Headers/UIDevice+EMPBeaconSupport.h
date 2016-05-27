@@ -8,6 +8,9 @@
 
 @import UIKit;
 
+/**
+ *    This is a helper category for the UIDevice class. Use the properties in this category to determine if the phone is ready to search for beacons.
+ */
 @interface UIDevice (EMPBeaconSupport)
 
 /**

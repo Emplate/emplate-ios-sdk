@@ -8,6 +8,22 @@
 
 @import Foundation;
 
+@class EMPPost;
+@class EMPAudience;
+
+/**
+ *    This is the EMPAnalyticsService class. This class is used to track data about the user of the app.
+ * 
+ *    When the service is initialized the first time, the user (EMPGuest) will automatically get a new guestId from the Emplate API. This is only done one time, and the user will keep the same guestId. Every analytics entry in the Emplate API is related to the EMPGuest.
+ *
+ *    To track which EMPPost objects the user is opening, you will have to use the startPostViewOfPost: and finishPostViewOfPost:. The service will automatically add the guestId, date/time to the EMPPostView, and send it to the Emplate API. *If you're using different EMPAudiences for the EMPPost objects, please use the startPostViewOfPost:audience: and finishPostViewOfPost:audience: to relate the PostViews to the audiences as well.*
+ *
+ *    You will only need to handle the PostViews. BeaconViews are automatically created in the EMPBeaconManager when the phone is near beacons.
+ *
+ *    If the phone is offline when creating PostViews or BeaconViews, they will be cached and resent when the internet connection is reestablished.
+ *
+ *    *Use the sharedService to perform the methods in this service.*
+ */
 @interface EMPAnalyticsService : NSObject
 
 /**
@@ -16,66 +32,40 @@
  *    @see EMPGuest
  */
 @property (readonly) NSNumber *guestId;
-/**
- *    @brief Send all finsihed views to the API
- *    @discussion This will send all finished PostViews and BeaconViews to the Emplate API through the EMPApiService
- */
-- (void)sendAllFinishedViews;
 
 #pragma mark - PostViews
 
 /**
  *    @brief Start a new PostView (with audienceId)
- *    @see startPostViewOfPostId:
+ *    @see startPostViewOfPost:
  *    @see EMPPost
  *
- *    @param postId     The unique id of the EMPPost
- *    @param audienceId The unique id of the EMPAudience
+ *    @param post     The EMPPost to start view of
+ *    @param audience The EMPAudience the post is viewed by
  */
-- (void)startPostViewOfPostId:(NSNumber *)postId audienceId:(NSNumber *)audienceId;
+- (void)startPostViewOfPost:(EMPPost *)post audience:(EMPAudience *)audience;
 /**
- *    @brief Finish an existing (with audienceId)
- *    @see startPostViewOfPostId:
+ *    @brief Finish an existing (with audience)
+ *    @see startPostViewOfPost:
  *    @see EMPPost
  *
- *    @param postId     The unique id of the EMPPost
- *    @param audienceId The unique id of the EMPAudience
+ *    @param post     The EMPPost to finish view of
+ *    @param audience The EMPAudience the post is viewed by
  */
-- (void)finishPostViewOfPostId:(NSNumber *)postId audienceId:(NSNumber *)audienceId;
+- (void)finishPostViewOfPost:(EMPPost *)post audience:(EMPAudience *)audience;
 /**
  *    @brief Start a new PostView
  *
- *    @param postId     The unique id of the EMPPost
+ *    @param post     The EMPPost to start view of
  */
-- (void)startPostViewOfPostId:(NSNumber *)postId;
+- (void)startPostViewOfPost:(EMPPost *)post;
 /**
  *    @brief Finish an existing PostView
  *    @see EMPPost
  *
- *    @param postId     The unique id of the EMPPost
+ *    @param post     The EMPPost to finish view of
  */
-- (void)finishPostViewOfPostId:(NSNumber *)postId;
-
-#pragma mark - BeaconViews
-
-/**
- *    @brief Start a new BeaconView
- *    @see EMPBeacon
- *
- *    @param beaconId The unique id of the EMPBeacon
- */
-- (void)startBeaconViewOfBeaconId:(NSNumber *)beaconId;
-/**
- *    @brief Finish an existing BeaconView
- *    @see EMPBeacon
- *
- *    @param beaconId The unique id of the EMPBeacon
- */
-- (void)finishBeaconViewOfBeaconId:(NSNumber *)beaconId;
-/**
- *    @brief Finish all unfinished BeaconViews
- */
-- (void)finishAllUnfinishedBeaconViews;
+- (void)finishPostViewOfPost:(EMPPost *)post;
 
 #pragma mark - Singleton
 

@@ -10,6 +10,11 @@
 
 @class EMPShop;
 
+/**
+ *    This is the EMPSubscriptionManager which is used to subscribe the user to one or more EMPShop objects.
+ *
+ *    *Use the sharedManager to perform the methods in this manager.*
+ */
 @interface EMPSubscriptionManager : NSObject
 
 #pragma mark - Getting

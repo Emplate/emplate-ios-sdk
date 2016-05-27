@@ -9,6 +9,9 @@
 @import Foundation;
 #import "EMPDefines.h"
 
+/**
+ *    This is the EMPShop Model. The EMPShop objects contains information about the shops created in the Emplate Control Panel. The EMPSubscriptionManager is used to subscribe the user (EMPGuest) to one or more shops.
+ */
 @interface EMPShop : NSObject
 
 /**
@@ -44,20 +47,21 @@
  *    @see EMPBeacon
  */
 @property (nonatomic, strong) NSArray *beacons;
-
 /**
- *    @brief A method for getting the shop image in a completion block
+ *    @brief Get the URL for the image in a certain size.
  *
- *    @param completionBlock a completion block called when loading is finish
- *    @param failureBlock    a failure block called if something went wrong
+ *    @param imageSize One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull
+ *
+ *    @return The URL for the shop image in the given size.
  */
-- (void)getImageWithCompletion:(EMPImageBlock)completionBlock withFailureBlock:(EMPErrorBlock)failureBlock;
+- (NSURL *)imageURLWithSize:(EMPImageSize)imageSize;
 /**
- *    @brief A method for getting the shop directions image in a completion block
+ *    @brief Get the URL for the directions image in a certain size.
  *
- *    @param completionBlock a completion block called when loading is finish
- *    @param failureBlock    a failure block called if something went wrong
+ *    @param imageSize One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull
+ *
+ *    @return The URL for the directions image in the given size.
  */
-- (void)getDirectionsWithCompletion:(EMPImageBlock)completionBlock withFailureBlock:(EMPErrorBlock)failureBlock;
+- (NSURL *)directionsURLWithSize:(EMPImageSize)imageSize;
 
 @end

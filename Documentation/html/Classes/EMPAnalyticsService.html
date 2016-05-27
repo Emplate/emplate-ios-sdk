@@ -43,6 +43,8 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 
 	
 	
@@ -70,21 +72,13 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/finishAllUnfinishedBeaconViews">- finishAllUnfinishedBeaconViews</option>
+		<option value="//api/name/finishPostViewOfPost:">- finishPostViewOfPost:</option>
 		
-		<option value="//api/name/finishBeaconViewOfBeaconId:">- finishBeaconViewOfBeaconId:</option>
+		<option value="//api/name/finishPostViewOfPost:audience:">- finishPostViewOfPost:audience:</option>
 		
-		<option value="//api/name/finishPostViewOfPostId:">- finishPostViewOfPostId:</option>
+		<option value="//api/name/startPostViewOfPost:">- startPostViewOfPost:</option>
 		
-		<option value="//api/name/finishPostViewOfPostId:audienceId:">- finishPostViewOfPostId:audienceId:</option>
-		
-		<option value="//api/name/sendAllFinishedViews">- sendAllFinishedViews</option>
-		
-		<option value="//api/name/startBeaconViewOfBeaconId:">- startBeaconViewOfBeaconId:</option>
-		
-		<option value="//api/name/startPostViewOfPostId:">- startPostViewOfPostId:</option>
-		
-		<option value="//api/name/startPostViewOfPostId:audienceId:">- startPostViewOfPostId:audienceId:</option>
+		<option value="//api/name/startPostViewOfPost:audience:">- startPostViewOfPost:audience:</option>
 		
 	</optgroup>
 	
@@ -116,6 +110,24 @@
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This is the EMPAnalyticsService class. This class is used to track data about the user of the app.</p>
+
+<p>When the service is initialized the first time, the user (<a href="../Classes/EMPGuest.html">EMPGuest</a>) will automatically get a new <a href="#//api/name/guestId">guestId</a> from the Emplate API. This is only done one time, and the user will keep the same <a href="#//api/name/guestId">guestId</a>. Every analytics entry in the Emplate API is related to the <a href="../Classes/EMPGuest.html">EMPGuest</a>.</p>
+
+<p>To track which <a href="../Classes/EMPPost.html">EMPPost</a> objects the user is opening, you will have to use the <a href="#//api/name/startPostViewOfPost:">startPostViewOfPost:</a> and <a href="#//api/name/finishPostViewOfPost:">finishPostViewOfPost:</a>. The service will automatically add the <a href="#//api/name/guestId">guestId</a>, date/time to the <a href="../Classes/EMPPostView.html">EMPPostView</a>, and send it to the Emplate API. <em>If you&rsquo;re using different EMPAudiences for the <a href="../Classes/EMPPost.html">EMPPost</a> objects, please use the <a href="#//api/name/startPostViewOfPost:audience:">startPostViewOfPost:audience:</a> and <a href="#//api/name/finishPostViewOfPost:audience:">finishPostViewOfPost:audience:</a> to relate the PostViews to the audiences as well.</em></p>
+
+<p>You will only need to handle the PostViews. BeaconViews are automatically created in the <a href="../Classes/EMPBeaconManager.html">EMPBeaconManager</a> when the phone is near beacons.</p>
+
+<p>If the phone is offline when creating PostViews or BeaconViews, they will be cached and resent when the internet connection is reestablished.</p>
+
+<p><em>Use the <a href="#//api/name/sharedService">sharedService</a> to perform the methods in this service.</em></p>
+					</div>
+					
+					
 
 					
 					
@@ -183,54 +195,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/sendAllFinishedViews" title="sendAllFinishedViews"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendAllFinishedViews">&ndash;&nbsp;sendAllFinishedViews</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Send all finsihed views to the API</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)sendAllFinishedViews</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>This will send all finished PostViews and BeaconViews to the Emplate API through the <a href="../Classes/EMPApiService.html">EMPApiService</a></p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">EMPAnalyticsService.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/startPostViewOfPostId:audienceId:" title="startPostViewOfPostId:audienceId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startPostViewOfPostId:audienceId:">&ndash;&nbsp;startPostViewOfPostId:audienceId:</a></code>
+	<a name="//api/name/startPostViewOfPost:audience:" title="startPostViewOfPost:audience:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startPostViewOfPost:audience:">&ndash;&nbsp;startPostViewOfPost:audience:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -245,7 +211,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)startPostViewOfPostId:(NSNumber *)<em>postId</em> audienceId:(NSNumber *)<em>audienceId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)startPostViewOfPost:(EMPPost *)<em>post</em> audience:(EMPAudience *)<em>audience</em></code></div>
 
 		    
 			
@@ -254,13 +220,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>postId</code></th>
-						<td><p>The unique id of the <a href="../Classes/EMPPost.html">EMPPost</a></p></td>
+						<th scope="row" class="argument-name"><code>post</code></th>
+						<td><p>The <a href="../Classes/EMPPost.html">EMPPost</a> to start view of</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>audienceId</code></th>
-						<td><p>The unique id of the <a href="../Classes/EMPAudience.html">EMPAudience</a></p></td>
+						<th scope="row" class="argument-name"><code>audience</code></th>
+						<td><p>The <a href="../Classes/EMPAudience.html">EMPAudience</a> the post is viewed by</p></td>
 					</tr>
 				
 				</table>
@@ -280,7 +246,7 @@
 				<h4 class="method-subtitle">See Also</h4>
 				<ul>
 					
-					<li><code><p><a href="#//api/name/startPostViewOfPostId:">- startPostViewOfPostId:</a></p></code></li>
+					<li><code><p><a href="#//api/name/startPostViewOfPost:">- startPostViewOfPost:</a></p></code></li>
 					
 					<li><code><p><a href="../Classes/EMPPost.html">EMPPost</a></p></code></li>
 					
@@ -298,8 +264,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/finishPostViewOfPostId:audienceId:" title="finishPostViewOfPostId:audienceId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/finishPostViewOfPostId:audienceId:">&ndash;&nbsp;finishPostViewOfPostId:audienceId:</a></code>
+	<a name="//api/name/finishPostViewOfPost:audience:" title="finishPostViewOfPost:audience:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/finishPostViewOfPost:audience:">&ndash;&nbsp;finishPostViewOfPost:audience:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -309,12 +275,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Finish an existing (with audienceId)</p>
+				<p>Finish an existing (with audience)</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)finishPostViewOfPostId:(NSNumber *)<em>postId</em> audienceId:(NSNumber *)<em>audienceId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)finishPostViewOfPost:(EMPPost *)<em>post</em> audience:(EMPAudience *)<em>audience</em></code></div>
 
 		    
 			
@@ -323,13 +289,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>postId</code></th>
-						<td><p>The unique id of the <a href="../Classes/EMPPost.html">EMPPost</a></p></td>
+						<th scope="row" class="argument-name"><code>post</code></th>
+						<td><p>The <a href="../Classes/EMPPost.html">EMPPost</a> to finish view of</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>audienceId</code></th>
-						<td><p>The unique id of the <a href="../Classes/EMPAudience.html">EMPAudience</a></p></td>
+						<th scope="row" class="argument-name"><code>audience</code></th>
+						<td><p>The <a href="../Classes/EMPAudience.html">EMPAudience</a> the post is viewed by</p></td>
 					</tr>
 				
 				</table>
@@ -349,7 +315,7 @@
 				<h4 class="method-subtitle">See Also</h4>
 				<ul>
 					
-					<li><code><p><a href="#//api/name/startPostViewOfPostId:">- startPostViewOfPostId:</a></p></code></li>
+					<li><code><p><a href="#//api/name/startPostViewOfPost:">- startPostViewOfPost:</a></p></code></li>
 					
 					<li><code><p><a href="../Classes/EMPPost.html">EMPPost</a></p></code></li>
 					
@@ -367,8 +333,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/startPostViewOfPostId:" title="startPostViewOfPostId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startPostViewOfPostId:">&ndash;&nbsp;startPostViewOfPostId:</a></code>
+	<a name="//api/name/startPostViewOfPost:" title="startPostViewOfPost:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startPostViewOfPost:">&ndash;&nbsp;startPostViewOfPost:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -383,7 +349,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)startPostViewOfPostId:(NSNumber *)<em>postId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)startPostViewOfPost:(EMPPost *)<em>post</em></code></div>
 
 		    
 			
@@ -392,8 +358,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>postId</code></th>
-						<td><p>The unique id of the <a href="../Classes/EMPPost.html">EMPPost</a></p></td>
+						<th scope="row" class="argument-name"><code>post</code></th>
+						<td><p>The <a href="../Classes/EMPPost.html">EMPPost</a> to start view of</p></td>
 					</tr>
 				
 				</table>
@@ -420,8 +386,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/finishPostViewOfPostId:" title="finishPostViewOfPostId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/finishPostViewOfPostId:">&ndash;&nbsp;finishPostViewOfPostId:</a></code>
+	<a name="//api/name/finishPostViewOfPost:" title="finishPostViewOfPost:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/finishPostViewOfPost:">&ndash;&nbsp;finishPostViewOfPost:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -436,7 +402,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)finishPostViewOfPostId:(NSNumber *)<em>postId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)finishPostViewOfPost:(EMPPost *)<em>post</em></code></div>
 
 		    
 			
@@ -445,8 +411,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>postId</code></th>
-						<td><p>The unique id of the <a href="../Classes/EMPPost.html">EMPPost</a></p></td>
+						<th scope="row" class="argument-name"><code>post</code></th>
+						<td><p>The <a href="../Classes/EMPPost.html">EMPPost</a> to finish view of</p></td>
 					</tr>
 				
 				</table>
@@ -470,171 +436,6 @@
 					
 				</ul>
 			</div>
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">EMPAnalyticsService.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/startBeaconViewOfBeaconId:" title="startBeaconViewOfBeaconId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startBeaconViewOfBeaconId:">&ndash;&nbsp;startBeaconViewOfBeaconId:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Start a new BeaconView</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)startBeaconViewOfBeaconId:(NSNumber *)<em>beaconId</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>beaconId</code></th>
-						<td><p>The unique id of the <a href="../Classes/EMPBeacon.html">EMPBeacon</a></p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="../Classes/EMPBeacon.html">EMPBeacon</a></p></code></li>
-					
-				</ul>
-			</div>
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">EMPAnalyticsService.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/finishBeaconViewOfBeaconId:" title="finishBeaconViewOfBeaconId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/finishBeaconViewOfBeaconId:">&ndash;&nbsp;finishBeaconViewOfBeaconId:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Finish an existing BeaconView</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)finishBeaconViewOfBeaconId:(NSNumber *)<em>beaconId</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>beaconId</code></th>
-						<td><p>The unique id of the <a href="../Classes/EMPBeacon.html">EMPBeacon</a></p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="../Classes/EMPBeacon.html">EMPBeacon</a></p></code></li>
-					
-				</ul>
-			</div>
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">EMPAnalyticsService.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/finishAllUnfinishedBeaconViews" title="finishAllUnfinishedBeaconViews"></a>
-	<h3 class="method-title"><code><a href="#//api/name/finishAllUnfinishedBeaconViews">&ndash;&nbsp;finishAllUnfinishedBeaconViews</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Finish all unfinished BeaconViews</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)finishAllUnfinishedBeaconViews</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
 			
 
 			
@@ -712,7 +513,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Emplate ApS. All rights reserved. Updated: 2016-04-21</p>
+						<p class="copyright">Copyright &copy; 2016 Emplate ApS. All rights reserved. Updated: 2016-05-27</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

@@ -8,6 +8,9 @@
 
 @import Foundation;
 
+/**
+ *    This is the EMPShopCategory Model. The EMPShopCategory objects contains information about categories of shops from the Emplate API. 
+ */
 @interface EMPShopCategory : NSObject
 
 /**

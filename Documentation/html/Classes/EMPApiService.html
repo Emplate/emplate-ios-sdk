@@ -43,6 +43,8 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 
 	
 	
@@ -64,11 +66,21 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/createGuest:completionBlock:failureBlock:">- createGuest:completionBlock:failureBlock:</option>
+		<option value="//api/name/getBeaconsAndPostsFromOrganization:completionBlock:failureBlock:">- getBeaconsAndPostsFromOrganization:completionBlock:failureBlock:</option>
 		
-		<option value="//api/name/sendLoggedViews:typeOfView:completionBlock:failureBlock:">- sendLoggedViews:typeOfView:completionBlock:failureBlock:</option>
+		<option value="//api/name/getBeaconsFromOrganization:completionBlock:failureBlock:">- getBeaconsFromOrganization:completionBlock:failureBlock:</option>
 		
-		<option value="//api/name/updateSubscriptions:completionBlock:failureBlock:">- updateSubscriptions:completionBlock:failureBlock:</option>
+		<option value="//api/name/getOrganizationWithId:completionBlock:failureBlock:">- getOrganizationWithId:completionBlock:failureBlock:</option>
+		
+		<option value="//api/name/getOrganizationsWithCompletionBlock:failureBlock:">- getOrganizationsWithCompletionBlock:failureBlock:</option>
+		
+		<option value="//api/name/getPostWithId:completionBlock:failureBlock:">- getPostWithId:completionBlock:failureBlock:</option>
+		
+		<option value="//api/name/getPostsFromBeacon:completionBlock:failureBlock:">- getPostsFromBeacon:completionBlock:failureBlock:</option>
+		
+		<option value="//api/name/getShopCategoriesFromOrganization:completionBlock:failureBlock:">- getShopCategoriesFromOrganization:completionBlock:failureBlock:</option>
+		
+		<option value="//api/name/getShopsFromOrganization:completionBlock:failureBlock:">- getShopsFromOrganization:completionBlock:failureBlock:</option>
 		
 	</optgroup>
 	
@@ -100,6 +112,16 @@
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This is the EMPApiService class. Use this class to get data from the Emplate API. At the moment there is only some specific API calls available. In the future it will be possible to build your own request to the API, to the exactly the data you need.</p>
+
+<p><em>Use the <a href="#//api/name/sharedService">sharedService</a> to perform the methods in this service.</em></p>
+					</div>
+					
+					
 
 					
 					
@@ -112,8 +134,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/createGuest:completionBlock:failureBlock:" title="createGuest:completionBlock:failureBlock:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/createGuest:completionBlock:failureBlock:">&ndash;&nbsp;createGuest:completionBlock:failureBlock:</a></code>
+	<a name="//api/name/getOrganizationsWithCompletionBlock:failureBlock:" title="getOrganizationsWithCompletionBlock:failureBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getOrganizationsWithCompletionBlock:failureBlock:">&ndash;&nbsp;getOrganizationsWithCompletionBlock:failureBlock:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -123,12 +145,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Create a new guest (get a new guestId)</p>
+				<p>Get all public <a href="../Classes/EMPOrganization.html">EMPOrganization</a> objects</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)createGuest:(EMPGuest *)<em>guest</em> completionBlock:(EMPGuestBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getOrganizationsWithCompletionBlock:(EMPArrayBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
 
 		    
 			
@@ -137,18 +159,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>guest</code></th>
-						<td><p>The new <a href="../Classes/EMPGuest.html">EMPGuest</a> object (should not have a guestId)</p></td>
-					</tr>
-				
-					<tr>
 						<th scope="row" class="argument-name"><code>completionBlock</code></th>
-						<td><p>A block to be called when finished</p></td>
+						<td><p>A completion block with the array of <a href="../Classes/EMPOrganization.html">EMPOrganization</a> objects</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>failureBlock</code></th>
-						<td><p>A block to be called if something went wrong</p></td>
+						<td><p>A failure block with the error object</p></td>
 					</tr>
 				
 				</table>
@@ -175,8 +192,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/sendLoggedViews:typeOfView:completionBlock:failureBlock:" title="sendLoggedViews:typeOfView:completionBlock:failureBlock:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendLoggedViews:typeOfView:completionBlock:failureBlock:">&ndash;&nbsp;sendLoggedViews:typeOfView:completionBlock:failureBlock:</a></code>
+	<a name="//api/name/getOrganizationWithId:completionBlock:failureBlock:" title="getOrganizationWithId:completionBlock:failureBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getOrganizationWithId:completionBlock:failureBlock:">&ndash;&nbsp;getOrganizationWithId:completionBlock:failureBlock:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -186,12 +203,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Send logged views from the AnalyticsManager</p>
+				<p>Get a single <a href="../Classes/EMPOrganization.html">EMPOrganization</a> from an organizationId</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)sendLoggedViews:(NSSet *)<em>views</em> typeOfView:(TypeOfView)<em>typeOfView</em> completionBlock:(EMPArrayBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getOrganizationWithId:(NSNumber *)<em>organizationId</em> completionBlock:(EMPOrganizationBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
 
 		    
 			
@@ -200,23 +217,18 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>views</code></th>
-						<td><p>A set of PostViews or BeaconViews</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>typeOfView</code></th>
-						<td><p>The type of views to send <a href="../Constants/TypeOfView.html">TypeOfView</a></p></td>
+						<th scope="row" class="argument-name"><code>organizationId</code></th>
+						<td><p>The unique id of the organization</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>completionBlock</code></th>
-						<td><p>A block to be called when finished</p></td>
+						<td><p>A completion block with the <a href="../Classes/EMPOrganization.html">EMPOrganization</a> object</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>failureBlock</code></th>
-						<td><p>A block to be called if something went wrong</p></td>
+						<td><p>A failure block with the error object</p></td>
 					</tr>
 				
 				</table>
@@ -228,23 +240,9 @@
 			
 
 			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Is used to send PostViews and BeaconViews</p>
-			</div>
-			
 
 			
 
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="../Classes/EMPAnalyticsService.html">EMPAnalyticsService</a></p></code></li>
-					
-				</ul>
-			</div>
 			
 
 			
@@ -257,8 +255,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/updateSubscriptions:completionBlock:failureBlock:" title="updateSubscriptions:completionBlock:failureBlock:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/updateSubscriptions:completionBlock:failureBlock:">&ndash;&nbsp;updateSubscriptions:completionBlock:failureBlock:</a></code>
+	<a name="//api/name/getBeaconsFromOrganization:completionBlock:failureBlock:" title="getBeaconsFromOrganization:completionBlock:failureBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBeaconsFromOrganization:completionBlock:failureBlock:">&ndash;&nbsp;getBeaconsFromOrganization:completionBlock:failureBlock:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -268,12 +266,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Update shop subscriptions for the user</p>
+				<p>Get <a href="../Classes/EMPBeacon.html">EMPBeacon</a> objects (without their <a href="../Classes/EMPPost.html">EMPPost</a> objects) from an organizationId</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)updateSubscriptions:(NSArray *)<em>subscriptions</em> completionBlock:(EMPBasicBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getBeaconsFromOrganization:(NSNumber *)<em>organizationId</em> completionBlock:(EMPArrayBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
 
 		    
 			
@@ -282,18 +280,333 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>subscriptions</code></th>
-						<td><p>An array of shopIds</p></td>
+						<th scope="row" class="argument-name"><code>organizationId</code></th>
+						<td><p>The unique id of the organization</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>completionBlock</code></th>
-						<td><p>A block to be called when finished</p></td>
+						<td><p>A completion block with the array of <a href="../Classes/EMPBeacon.html">EMPBeacon</a> objects</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>failureBlock</code></th>
-						<td><p>A block to be called if something went wrong</p></td>
+						<td><p>A failure block with the error object</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPApiService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getBeaconsAndPostsFromOrganization:completionBlock:failureBlock:" title="getBeaconsAndPostsFromOrganization:completionBlock:failureBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBeaconsAndPostsFromOrganization:completionBlock:failureBlock:">&ndash;&nbsp;getBeaconsAndPostsFromOrganization:completionBlock:failureBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get <a href="../Classes/EMPBeacon.html">EMPBeacon</a> objects and their <a href="../Classes/EMPPost.html">EMPPost</a> objects from an organizationId</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getBeaconsAndPostsFromOrganization:(NSNumber *)<em>organizationId</em> completionBlock:(EMPArrayBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>organizationId</code></th>
+						<td><p>The unique id of the organization</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>A completion block with the array of <a href="../Classes/EMPBeacon.html">EMPBeacon</a> objects</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failureBlock</code></th>
+						<td><p>A failure block with the error object</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPApiService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPostsFromBeacon:completionBlock:failureBlock:" title="getPostsFromBeacon:completionBlock:failureBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPostsFromBeacon:completionBlock:failureBlock:">&ndash;&nbsp;getPostsFromBeacon:completionBlock:failureBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get all <a href="../Classes/EMPPost.html">EMPPost</a> objects from an beaconId</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPostsFromBeacon:(NSNumber *)<em>beaconId</em> completionBlock:(EMPArrayBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>beaconId</code></th>
+						<td><p>The unique id of the beacon</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>A completion block with the array of <a href="../Classes/EMPPost.html">EMPPost</a> objects</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failureBlock</code></th>
+						<td><p>A failure block with the error object</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPApiService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPostWithId:completionBlock:failureBlock:" title="getPostWithId:completionBlock:failureBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPostWithId:completionBlock:failureBlock:">&ndash;&nbsp;getPostWithId:completionBlock:failureBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get a single <a href="../Classes/EMPPost.html">EMPPost</a> from a postId</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPostWithId:(NSNumber *)<em>postId</em> completionBlock:(EMPPostBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>postId</code></th>
+						<td><p>The unique id of the post</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>A completion block with the <a href="../Classes/EMPPost.html">EMPPost</a> object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failureBlock</code></th>
+						<td><p>A failure block with the error object</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPApiService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getShopCategoriesFromOrganization:completionBlock:failureBlock:" title="getShopCategoriesFromOrganization:completionBlock:failureBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getShopCategoriesFromOrganization:completionBlock:failureBlock:">&ndash;&nbsp;getShopCategoriesFromOrganization:completionBlock:failureBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get all <a href="../Classes/EMPShopCategory.html">EMPShopCategory</a> objects from an organizationId</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getShopCategoriesFromOrganization:(NSNumber *)<em>organizationId</em> completionBlock:(EMPArrayBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>organizationId</code></th>
+						<td><p>The unique id of the organization</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>A completion block with the array of <a href="../Classes/EMPShopCategory.html">EMPShopCategory</a> objects</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failureBlock</code></th>
+						<td><p>A failure block with the error object</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EMPApiService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getShopsFromOrganization:completionBlock:failureBlock:" title="getShopsFromOrganization:completionBlock:failureBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getShopsFromOrganization:completionBlock:failureBlock:">&ndash;&nbsp;getShopsFromOrganization:completionBlock:failureBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get all <a href="../Classes/EMPShop.html">EMPShop</a> objects from an organizationId</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getShopsFromOrganization:(NSNumber *)<em>organizationId</em> completionBlock:(EMPArrayBlock)<em>completionBlock</em> failureBlock:(EMPErrorBlock)<em>failureBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>organizationId</code></th>
+						<td><p>The unique id of the organization</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>A completion block with the array of <a href="../Classes/EMPShop.html">EMPShop</a> objects</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failureBlock</code></th>
+						<td><p>A failure block with the error object</p></td>
 					</tr>
 				
 				</table>
@@ -385,7 +698,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Emplate ApS. All rights reserved. Updated: 2016-04-21</p>
+						<p class="copyright">Copyright &copy; 2016 Emplate ApS. All rights reserved. Updated: 2016-05-27</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

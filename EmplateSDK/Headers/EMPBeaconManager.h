@@ -11,6 +11,13 @@
 @class EMPBeacon;
 @protocol EMPBeaconManagerDelegate;
 
+/**
+ *    This is the EMPBeaconManager class, and is used to handle everything related to searching for beacons. Use the startSearchingForBeacons: to start the search of an array of EMPBeacon objects. Use the EMPBeaconManagerDelegate to get informed when the closest beacon is chaning to a new, or when the phone is entering or exiting an EMPBeacon objects region.
+ * 
+ *    When the search for beacons has started, you can use startMonitorBeacon: to add a beacon to the array of beacons the manager is searching for. Use the stopMonitoringBeacon: to stop the manager from searching for the beacon.
+ *
+ *    *Use the sharedManager to perform the methods in this manager.*
+ */
 @interface EMPBeaconManager : NSObject
 
 /**
@@ -79,10 +86,15 @@
 
 @end
 
+/**
+ *    This is the EMPBeaconManagerDelegate
+ *    
+ *    The delegate is used when searching for beacons in the EMPBeaconManager.
+ */
 @protocol EMPBeaconManagerDelegate <NSObject>
 @optional
 /**
- *    @brief The method is called every time the closest beacon change to a new beacon
+ *    @brief Is called every time the closest beacon change to a new beacon
  *    @discussion The BeaconManager is finding the closest active beacon.
  *    @see EMPBeacon
  *
@@ -117,3 +129,6 @@
 - (void)beaconManagerDidChangeBluetoothState:(CBCentralManagerState)bluetoothState;
 
 @end
+
+#define EMPBeaconManagerDidChangeAuthorizationStatus @"EMPBeaconManagerDidChangeAuthorizationStatus"
+#define EMPBeaconManagerDidChangeBluetoothState @"EMPBeaconManagerDidChangeBluetoothState"

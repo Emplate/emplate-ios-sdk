@@ -9,48 +9,78 @@
 @import Foundation;
 #import "EMPDefines.h"
 
+/**
+ *    This is the EMPApiService class. Use this class to get data from the Emplate API. At the moment there is only some specific API calls available. In the future it will be possible to build your own request to the API, to the exactly the data you need.
+ *
+ *    *Use the sharedService to perform the methods in this service.*
+ */
 @interface EMPApiService : NSObject
 
 #pragma mark - Get data
 
+/**
+ *    @brief Get all public EMPOrganization objects
+ *
+ *    @param completionBlock A completion block with the array of EMPOrganization objects
+ *    @param failureBlock    A failure block with the error object
+ */
 - (void)getOrganizationsWithCompletionBlock:(EMPArrayBlock)completionBlock failureBlock:(EMPErrorBlock)failureBlock;
+/**
+ *    @brief Get a single EMPOrganization from an organizationId
+ *
+ *    @param organizationId  The unique id of the organization
+ *    @param completionBlock A completion block with the EMPOrganization object
+ *    @param failureBlock    A failure block with the error object
+ */
 - (void)getOrganizationWithId:(NSNumber *)organizationId completionBlock:(EMPOrganizationBlock)completionBlock failureBlock:(EMPErrorBlock)failureBlock;
+/**
+ *    @brief Get EMPBeacon objects (without their EMPPost objects) from an organizationId
+ *
+ *    @param organizationId  The unique id of the organization
+ *    @param completionBlock A completion block with the array of EMPBeacon objects
+ *    @param failureBlock    A failure block with the error object
+ */
 - (void)getBeaconsFromOrganization:(NSNumber *)organizationId completionBlock:(EMPArrayBlock)completionBlock failureBlock:(EMPErrorBlock)failureBlock;
+/**
+ *    @brief Get EMPBeacon objects and their EMPPost objects from an organizationId
+ *
+ *    @param organizationId  The unique id of the organization
+ *    @param completionBlock A completion block with the array of EMPBeacon objects
+ *    @param failureBlock    A failure block with the error object
+ */
 - (void)getBeaconsAndPostsFromOrganization:(NSNumber *)organizationId completionBlock:(EMPArrayBlock)completionBlock failureBlock:(EMPErrorBlock)failureBlock;
+/**
+ *    @brief Get all EMPPost objects from an beaconId
+ *
+ *    @param beaconId        The unique id of the beacon
+ *    @param completionBlock A completion block with the array of EMPPost objects
+ *    @param failureBlock    A failure block with the error object
+ */
 - (void)getPostsFromBeacon:(NSNumber *)beaconId completionBlock:(EMPArrayBlock)completionBlock failureBlock:(EMPErrorBlock)failureBlock;
+/**
+ *    @brief Get a single EMPPost from a postId
+ *
+ *    @param postId          The unique id of the post
+ *    @param completionBlock A completion block with the EMPPost object
+ *    @param failureBlock    A failure block with the error object
+ */
 - (void)getPostWithId:(NSNumber *)postId completionBlock:(EMPPostBlock)completionBlock failureBlock:(EMPErrorBlock)failureBlock;
+/**
+ *    @brief Get all EMPShopCategory objects from an organizationId
+ *
+ *    @param organizationId  The unique id of the organization
+ *    @param completionBlock A completion block with the array of EMPShopCategory objects
+ *    @param failureBlock    A failure block with the error object
+ */
 - (void)getShopCategoriesFromOrganization:(NSNumber *)organizationId completionBlock:(EMPArrayBlock)completionBlock failureBlock:(EMPErrorBlock)failureBlock;
+/**
+ *    @brief Get all EMPShop objects from an organizationId
+ *
+ *    @param organizationId  The unique id of the organization
+ *    @param completionBlock A completion block with the array of EMPShop objects
+ *    @param failureBlock    A failure block with the error object
+ */
 - (void)getShopsFromOrganization:(NSNumber *)organizationId completionBlock:(EMPArrayBlock)completionBlock failureBlock:(EMPErrorBlock)failureBlock;
-
-#pragma mark - Analytics
-
-/**
- *    @brief Create a new guest (get a new guestId)
- *
- *    @param guest           The new EMPGuest object (should not have a guestId)
- *    @param completionBlock A block to be called when finished
- *    @param failureBlock    A block to be called if something went wrong
- */
-- (void)createGuest:(EMPGuest *)guest completionBlock:(EMPGuestBlock)completionBlock failureBlock:(EMPErrorBlock)failureBlock;
-/**
- *    @brief Send logged views from the AnalyticsManager
- *    @discussion Is used to send PostViews and BeaconViews
- *    @see EMPAnalyticsService
- *
- *    @param views           A set of PostViews or BeaconViews
- *    @param typeOfView      The type of views to send TypeOfView
- *    @param completionBlock A block to be called when finished
- *    @param failureBlock    A block to be called if something went wrong
- */
-- (void)sendLoggedViews:(NSSet *)views typeOfView:(TypeOfView)typeOfView completionBlock:(EMPArrayBlock)completionBlock failureBlock:(EMPErrorBlock)failureBlock;
-/**
- *    @brief Update shop subscriptions for the user
- *
- *    @param subscriptions   An array of shopIds
- *    @param completionBlock A block to be called when finished
- *    @param failureBlock    A block to be called if something went wrong
- */
-- (void)updateSubscriptions:(NSArray *)subscriptions completionBlock:(EMPBasicBlock)completionBlock failureBlock:(EMPErrorBlock)failureBlock;
 
 #pragma mark - Singleton
 

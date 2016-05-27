@@ -15,7 +15,6 @@
 
 // Models
 #import "EMPBeacon.h"
-#import "EMPBeaconView.h"
 #import "EMPOrganization.h"
 #import "EMPPost.h"
 #import "EMPPostPeriod.h"
