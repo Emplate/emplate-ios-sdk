@@ -1,0 +1,369 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/EMPDefines.h",
+      "line": 34,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/EMPDefines.h",
+      "line": 38,
+      "symbol": "EMPImageSize",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 24,
+      "symbol": "EMPApiClient.baseURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 25,
+      "symbol": "EMPApiClient.urlSession",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 29,
+      "symbol": "EMPApiClient.-getObjects:includes:limitFields:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 32,
+      "symbol": "EMPApiClient.-getObject:withId:includes:limitFields:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 35,
+      "symbol": "EMPApiClient.-getObjects:relatedTo:withId:includes:limitFields:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 38,
+      "symbol": "EMPApiClient.-getObject:relatedTo:withId:includes:limitFields:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 44,
+      "symbol": "EMPApiClient.-postObject:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 46,
+      "symbol": "EMPApiClient.-postObjects:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 48,
+      "symbol": "EMPApiClient.-postAndSaveObject:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 52,
+      "symbol": "EMPApiClient.-syncRelations:forObject:withRelationshipString:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 56,
+      "symbol": "EMPApiClient.-newJWTTokenWithCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 58,
+      "symbol": "EMPApiClient.-createNewGuestWithEmail:password:firstName:lastName:age:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 60,
+      "symbol": "EMPApiClient.-getCurrentGuestWithCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPBeaconManager.h",
+      "line": 42,
+      "symbol": "EMPBeaconManager.-addDelegate:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPBeaconManager.h",
+      "line": 44,
+      "symbol": "EMPBeaconManager.-removeDelegate:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPBeaconManager.h",
+      "line": 79,
+      "symbol": "EMPBeaconManager.-startSearchingForBeaconRegion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPBeaconManager.h",
+      "line": 81,
+      "symbol": "EMPBeaconManager.-stopSearchingForBeaconRegion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPBeaconManager.h",
+      "line": 85,
+      "symbol": "EMPBeaconManager.-startSearchingForGeofence:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPBeaconManager.h",
+      "line": 87,
+      "symbol": "EMPBeaconManager.-stopSearchingForGeofence:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPBeaconManager.h",
+      "line": 164,
+      "symbol": "EMPBeaconManagerDelegate.-beaconManagerDidRangeCLBeacons:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPBeaconManager.h",
+      "line": 166,
+      "symbol": "EMPBeaconManagerDelegate.-beaconManagerDidEnterRegion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPBeaconManager.h",
+      "line": 168,
+      "symbol": "EMPBeaconManagerDelegate.-beaconManagerDidExitRegion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPBeaconManager.h",
+      "line": 170,
+      "symbol": "EMPBeaconManagerDelegate.-beaconManagerDidEnterRegionWithGeofence:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPBeaconManager.h",
+      "line": 172,
+      "symbol": "EMPBeaconManagerDelegate.-beaconManagerDidExitRegionWithGeofence:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPLoginManager.h",
+      "line": 18,
+      "symbol": "EMPLoginManager.+currentGuest",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPLoginManager.h",
+      "line": 20,
+      "symbol": "EMPLoginManager.+ensureGuestWithCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPLoginManager.h",
+      "line": 22,
+      "symbol": "EMPLoginManager.+refreshCurrentGuestWithCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPLoginManager.h",
+      "line": 24,
+      "symbol": "EMPLoginManager.+signInWithFacebookUserId:accessToken:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPLoginManager.h",
+      "line": 26,
+      "symbol": "EMPLoginManager.+signUpWithEmail:firstName:lastName:password:age:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPLoginManager.h",
+      "line": 28,
+      "symbol": "EMPLoginManager.+signInWithEmail:password:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPLoginManager.h",
+      "line": 30,
+      "symbol": "EMPLoginManager.+refreshJWTTokenWithCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPLoginManager.h",
+      "line": 32,
+      "symbol": "EMPLoginManager.+signOutWithCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPLoginManager.h",
+      "line": 34,
+      "symbol": "EMPLoginManager.+isSignedIn",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPLoginManager.h",
+      "line": 36,
+      "symbol": "EMPLoginManager.+isSignedInWithFacebook",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPLoginManager.h",
+      "line": 38,
+      "symbol": "EMPLoginManager.+isSignedInWithEmailPassword",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Managers/EMPRealm.h",
+      "line": 12,
+      "symbol": "EMPRealm",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPAction.h",
+      "line": 46,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPApiModel.h",
+      "line": 14,
+      "symbol": "EMPApiModel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPApiModel.h",
+      "line": 56,
+      "symbol": "EMPApiModel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPAudience.h",
+      "line": 44,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPBeacon.h",
+      "line": 114,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPGuest.h",
+      "line": 74,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPOrganization.h",
+      "line": 112,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPPost.h",
+      "line": 84,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPPostPeriod.h",
+      "line": 50,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPPostView.h",
+      "line": 52,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPPrize.h",
+      "line": 67,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPRedemption.h",
+      "line": 36,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPShop.h",
+      "line": 112,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/EmplateSDK/EmplateSDK/Models/EMPShopCategory.h",
+      "line": 44,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/soren/Git/Emplate/EmplateSDK"
+}

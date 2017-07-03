@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EMPSubscriptionManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/EMPSubscriptionManager" class="dashAnchor"></a>
+
+    <a title="EMPSubscriptionManager Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          EmplateSDK Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Emplate/emplate-ios-sdk">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">EmplateSDK Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      EMPSubscriptionManager Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Managers.html">Managers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPAnalyticsManager.html">EMPAnalyticsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPApiClient.html">EMPApiClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPBeaconManager.html">EMPBeaconManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EMPBeaconManagerDelegate.html">EMPBeaconManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPInboxManager.html">EMPInboxManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Managers.html#/c:objc(cs)EMPLoginManager">EMPLoginManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPSubscriptionManager.html">EMPSubscriptionManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Models.html">Models</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPAction.html">EMPAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPAudience.html">EMPAudience</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPBeacon.html">EMPBeacon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPBeaconCategory.html">EMPBeaconCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPGeofence.html">EMPGeofence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPGuest.html">EMPGuest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPOrganization.html">EMPOrganization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPPost.html">EMPPost</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPPostPeriod.html">EMPPostPeriod</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPPostView.html">EMPPostView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPPrize.html">EMPPrize</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPRedemption.html">EMPRedemption</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPShop.html">EMPShop</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPShopCategory.html">EMPShopCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPToken.html">EMPToken</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Helpers.html">Helpers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPDateFormatter.html">EMPDateFormatter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Categories.html">Categories</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Categories/UIDevice(EMPBeaconSupport).html">UIDevice(EMPBeaconSupport)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Block definitions.html">Block definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Block definitions.html#/c:EMPDefines.h@T@EMPObjectBlock">EMPObjectBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Block definitions.html#/c:EMPDefines.h@T@EMPObjectsBlock">EMPObjectsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Block definitions.html#/c:EMPDefines.h@T@EMPErrorBlock">EMPErrorBlock</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Guides.html">Other Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../configuration.html">Configuration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>EMPSubscriptionManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">EMPSubscriptionManager</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>This is the EMPSubscriptionManager which is used to subscribe the user to one or more EMPShop objects.</p>
+
+<p><em>Use the sharedManager to perform the methods in this manager.</em></p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Getting"></a>
+                <a name="//apple_ref/objc/Section/Getting" class="dashAnchor"></a>
+                <a href="#/Getting">
+                  <h3 class="section-name">Getting</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMPSubscriptionManager(im)isShopSubscribedTo:"></a>
+                    <a name="//apple_ref/objc/Method/-isShopSubscribedTo:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMPSubscriptionManager(im)isShopSubscribedTo:">-isShopSubscribedTo:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Is the user subscribed to a shop</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p>EMPShop</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isShopSubscribedTo</span><span class="p">:(</span><span class="n"><a href="../Classes/EMPShop.html">EMPShop</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">shop</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">isShopSubscribed</span><span class="p">(</span><span class="n">to</span> <span class="nv">shop</span><span class="p">:</span> <span class="kt"><a href="../Classes/EMPShop.html">EMPShop</a></span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shop</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>EMPShop</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BOOL indicating wheter the shop is subscribed to or not</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Setting"></a>
+                <a name="//apple_ref/objc/Section/Setting" class="dashAnchor"></a>
+                <a href="#/Setting">
+                  <h3 class="section-name">Setting</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMPSubscriptionManager(im)subscribeToShop:"></a>
+                    <a name="//apple_ref/objc/Method/-subscribeToShop:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMPSubscriptionManager(im)subscribeToShop:">-subscribeToShop:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscribe the user to a shop</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p>EMPShop</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">subscribeToShop</span><span class="p">:(</span><span class="n"><a href="../Classes/EMPShop.html">EMPShop</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">shop</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">subscribe</span><span class="p">(</span><span class="n">to</span> <span class="nv">shop</span><span class="p">:</span> <span class="kt"><a href="../Classes/EMPShop.html">EMPShop</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shop</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The EMPShop to subscribe to</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMPSubscriptionManager(im)unsubscribeFromShop:"></a>
+                    <a name="//apple_ref/objc/Method/-unsubscribeFromShop:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMPSubscriptionManager(im)unsubscribeFromShop:">-unsubscribeFromShop:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unsubscribe the user from a shop</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p>EMPShop</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">unsubscribeFromShop</span><span class="p">:(</span><span class="n"><a href="../Classes/EMPShop.html">EMPShop</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">shop</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">unsubscribe</span><span class="p">(</span><span class="n">from</span> <span class="nv">shop</span><span class="p">:</span> <span class="kt"><a href="../Classes/EMPShop.html">EMPShop</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shop</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The EMPShop to unsubscribe from</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMPSubscriptionManager(im)toggleSubscriptionForShop:"></a>
+                    <a name="//apple_ref/objc/Method/-toggleSubscriptionForShop:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMPSubscriptionManager(im)toggleSubscriptionForShop:">-toggleSubscriptionForShop:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Toggle the subscription for a shop</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p>EMPShop</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">toggleSubscriptionForShop</span><span class="p">:(</span><span class="n"><a href="../Classes/EMPShop.html">EMPShop</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">shop</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">toggleSubscription</span><span class="p">(</span><span class="k">for</span> <span class="nv">shop</span><span class="p">:</span> <span class="kt"><a href="../Classes/EMPShop.html">EMPShop</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shop</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The EMPShop to toggle subscription for</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMPSubscriptionManager(im)syncSubscriptions"></a>
+                    <a name="//apple_ref/objc/Method/-syncSubscriptions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMPSubscriptionManager(im)syncSubscriptions">-syncSubscriptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sync the subscriptions with the API.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">syncSubscriptions</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">syncSubscriptions</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Singleton"></a>
+                <a name="//apple_ref/objc/Section/Singleton" class="dashAnchor"></a>
+                <a href="#/Singleton">
+                  <h3 class="section-name">Singleton</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMPSubscriptionManager(cm)sharedManager"></a>
+                    <a name="//apple_ref/objc/Method/+sharedManager" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMPSubscriptionManager(cm)sharedManager">+sharedManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The shared instance of the EMPSubscriptionManager</p>
+
+<p><em>Should be used for all subscription operations.</em></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">EMPSubscriptionManager</span> <span class="o">*</span><span class="p">)</span><span class="n">sharedManager</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">shared</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">EMPSubscriptionManager</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>EMPSubscriptionManager</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2017 <a class="link" href="http://emplate.it" target="_blank" rel="external">Emplate ApS</a>. All rights reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

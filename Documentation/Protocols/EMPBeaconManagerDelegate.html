@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EMPBeaconManagerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Protocol/EMPBeaconManagerDelegate" class="dashAnchor"></a>
+
+    <a title="EMPBeaconManagerDelegate Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          EmplateSDK Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Emplate/emplate-ios-sdk">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">EmplateSDK Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      EMPBeaconManagerDelegate Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Managers.html">Managers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPAnalyticsManager.html">EMPAnalyticsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPApiClient.html">EMPApiClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPBeaconManager.html">EMPBeaconManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EMPBeaconManagerDelegate.html">EMPBeaconManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPInboxManager.html">EMPInboxManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Managers.html#/c:objc(cs)EMPLoginManager">EMPLoginManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPSubscriptionManager.html">EMPSubscriptionManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Models.html">Models</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPAction.html">EMPAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPAudience.html">EMPAudience</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPBeacon.html">EMPBeacon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPBeaconCategory.html">EMPBeaconCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPGeofence.html">EMPGeofence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPGuest.html">EMPGuest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPOrganization.html">EMPOrganization</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPPost.html">EMPPost</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPPostPeriod.html">EMPPostPeriod</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPPostView.html">EMPPostView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPPrize.html">EMPPrize</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPRedemption.html">EMPRedemption</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPShop.html">EMPShop</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPShopCategory.html">EMPShopCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPToken.html">EMPToken</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Helpers.html">Helpers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPDateFormatter.html">EMPDateFormatter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Categories.html">Categories</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Categories/UIDevice(EMPBeaconSupport).html">UIDevice(EMPBeaconSupport)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Block definitions.html">Block definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Block definitions.html#/c:EMPDefines.h@T@EMPObjectBlock">EMPObjectBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Block definitions.html#/c:EMPDefines.h@T@EMPObjectsBlock">EMPObjectsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Block definitions.html#/c:EMPDefines.h@T@EMPErrorBlock">EMPErrorBlock</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Guides.html">Other Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../configuration.html">Configuration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>EMPBeaconManagerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">EMPBeaconManagerDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>This is the EMPBeaconManagerDelegate</p>
+
+<p>The delegate is used when searching for beacons in the EMPBeaconManager.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerClosestBeaconChangedTo:"></a>
+                    <a name="//apple_ref/objc/Method/-beaconManagerClosestBeaconChangedTo:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerClosestBeaconChangedTo:">-beaconManagerClosestBeaconChangedTo:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Is called every time the closest beacon change to a new beacon</p>
+
+<p><em>The BeaconManager is finding the closest active beacon.</em></p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p>EMPBeacon</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">beaconManagerClosestBeaconChangedTo</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/EMPBeacon.html">EMPBeacon</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">beacon</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">beaconManagerClosestBeaconChanged</span><span class="p">(</span><span class="n">to</span> <span class="nv">beacon</span><span class="p">:</span> <span class="kt"><a href="../Classes/EMPBeacon.html">EMPBeacon</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>beacon</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closest EMPBeacon</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerDidRangeActiveBeacons:"></a>
+                    <a name="//apple_ref/objc/Method/-beaconManagerDidRangeActiveBeacons:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerDidRangeActiveBeacons:">-beaconManagerDidRangeActiveBeacons:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Is called every time the BeaconManager is receiving information about the nearby beacons</p>
+
+<p><em>The BeaconManager is sorting the beacons by distance ascending order.</em></p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p>EMPBeacon</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">beaconManagerDidRangeActiveBeacons</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/EMPBeacon.html">EMPBeacon</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">beacons</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">beaconManagerDidRangeActiveBeacons</span><span class="p">(</span><span class="n">_</span> <span class="nv">beacons</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/EMPBeacon.html">EMPBeacon</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>beacons</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>All the active nearby beacons sorted by distance</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerDidRangeBeacons:"></a>
+                    <a name="//apple_ref/objc/Method/-beaconManagerDidRangeBeacons:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerDidRangeBeacons:">-beaconManagerDidRangeBeacons:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Is called every time the BeaconManager is receiving information about the nearby beacons</p>
+
+<p><em>The BeaconManager is sorting the beacons by distance ascending order.</em></p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p>EMPBeacon</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">beaconManagerDidRangeBeacons</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/EMPBeacon.html">EMPBeacon</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">beacons</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">beaconManagerDidRangeBeacons</span><span class="p">(</span><span class="n">_</span> <span class="nv">beacons</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/EMPBeacon.html">EMPBeacon</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>beacons</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>All the nearby beacons (including inactive beacons) sorted by distance</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerDidEnterRegionWithBeacon:"></a>
+                    <a name="//apple_ref/objc/Method/-beaconManagerDidEnterRegionWithBeacon:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerDidEnterRegionWithBeacon:">-beaconManagerDidEnterRegionWithBeacon:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Is called when the device is entering a new beacon region</p>
+
+<p><em>If the app is started in a beacon region, this method will not be called before the device has left the beacon region.</em></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">beaconManagerDidEnterRegionWithBeacon</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/EMPBeacon.html">EMPBeacon</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">beacon</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">beaconManagerDidEnterRegion</span><span class="p">(</span><span class="n">with</span> <span class="nv">beacon</span><span class="p">:</span> <span class="kt"><a href="../Classes/EMPBeacon.html">EMPBeacon</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>beacon</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The EMPBeacon for the entered beacon region</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerDidExitRegionWithBeacon:"></a>
+                    <a name="//apple_ref/objc/Method/-beaconManagerDidExitRegionWithBeacon:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerDidExitRegionWithBeacon:">-beaconManagerDidExitRegionWithBeacon:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Is called when the device has left a beacon region</p>
+
+<p><em>This method is called 30 seconds after the device has actually left the beacon region.</em></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">beaconManagerDidExitRegionWithBeacon</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/EMPBeacon.html">EMPBeacon</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">beacon</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">beaconManagerDidExitRegion</span><span class="p">(</span><span class="n">with</span> <span class="nv">beacon</span><span class="p">:</span> <span class="kt"><a href="../Classes/EMPBeacon.html">EMPBeacon</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>beacon</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The EMPBeacon for the exited beacon region</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerDidChangeAuthorizationStatus:"></a>
+                    <a name="//apple_ref/objc/Method/-beaconManagerDidChangeAuthorizationStatus:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerDidChangeAuthorizationStatus:">-beaconManagerDidChangeAuthorizationStatus:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Is called every time the location authorization status is changed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">beaconManagerDidChangeAuthorizationStatus</span><span class="p">:(</span><span class="n">CLAuthorizationStatus</span><span class="p">)</span><span class="nv">status</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">beaconManagerDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>status</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The CLAuthorizationStatus from CoreLocation</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerDidChangeBluetoothState:"></a>
+                    <a name="//apple_ref/objc/Method/-beaconManagerDidChangeBluetoothState:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EMPBeaconManagerDelegate(im)beaconManagerDidChangeBluetoothState:">-beaconManagerDidChangeBluetoothState:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Is called every time the bluetooth state is changed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">beaconManagerDidChangeBluetoothState</span><span class="p">:(</span><span class="n">CBManagerState</span><span class="p">)</span><span class="nv">bluetoothState</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">beaconManagerDidChangeBluetoothState</span><span class="p">(</span><span class="n">_</span> <span class="nv">bluetoothState</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bluetoothState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The CBManagerState with the state from CoreBluetooth</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2017 <a class="link" href="http://emplate.it" target="_blank" rel="external">Emplate ApS</a>. All rights reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

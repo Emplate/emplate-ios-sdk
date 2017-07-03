@@ -1,0 +1,6 @@
+framework module EmplateSDK {
+  umbrella header "EmplateSDK.h"
+
+  export *
+  module * { export * }
+}
