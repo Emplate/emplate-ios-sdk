@@ -4,7 +4,7 @@
 //
 
 @import Foundation;
-#import <Realm/RLMObject.h>
+@import Realm;
 
 @class EMPApiModel;
 @class EMPRelationshipMapping;

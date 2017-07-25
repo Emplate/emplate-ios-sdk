@@ -1,4 +1,10 @@
 # Change Log
+## Version 1.1.0 (2017-07-25)
+* Added the new EMPPushManager to handle sign up for push messages in the Emplate API
+
+## Version 1.0.1 (2017-07-03)
+* Changes to the podspec file
+
 ## Version 1.0.0 (2017-07-03)
 The brand new version of the Emplate SDK is now released. This release includes some of the following
 * The SDK is now using Realm for storing models.

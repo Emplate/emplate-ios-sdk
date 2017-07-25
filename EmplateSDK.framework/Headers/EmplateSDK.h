@@ -14,6 +14,7 @@
 #import "EMPSubscriptionManager.h"
 #import "EMPLoginManager.h"
 #import "EMPRealm.h"
+#import "EMPPushManager.h"
 
 // Models
 #import "EMPApiModel.h"
