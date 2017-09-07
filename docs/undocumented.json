@@ -317,7 +317,7 @@
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPOrganization.h",
-      "line": 112,
+      "line": 117,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"

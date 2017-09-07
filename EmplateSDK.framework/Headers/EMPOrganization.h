@@ -71,6 +71,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable) NSNumber<RLMDouble> *longitude;
 /**
+ A number indicating how many times it should be possible to check in and create actions
+ @see EMPAction
+ */
+@property int checkinsPerWeek;
+/**
  Date of creation in the Emplate API
  */
 @property (nullable) NSDate *createdAt;
