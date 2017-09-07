@@ -1,4 +1,7 @@
 # Change Log
+## Version 1.1.1 (2017-09-07)
+* Added checkinsPerWeek to the EMPOrganization model
+
 ## Version 1.1.0 (2017-07-25)
 * Added the new EMPPushManager to handle sign up for push messages in the Emplate API
 
