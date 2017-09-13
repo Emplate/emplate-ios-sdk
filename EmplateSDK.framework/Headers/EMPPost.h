@@ -11,13 +11,13 @@
 #import "EMPDefines.h"
 #import "EMPPostPeriod.h"
 #import "EMPApiModel.h"
+#import "EMPPostField.h"
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  This is the EMPPost model. EMPPost objects contains the details for the post created in the Emplate Control Panel. EMPPost objects can also be assigned to EMPBeacon objects.
  */
 @interface EMPPost : EMPApiModel
-
 /**
  A unique id
  */
@@ -38,7 +38,12 @@ NS_ASSUME_NONNULL_BEGIN
  An array of periods where the post should be active
  @see EMPPostPeriod
  */
-@property (nullable) RLMArray<EMPPostPeriod *><EMPPostPeriod> *periods;
+@property RLMArray<EMPPostPeriod *><EMPPostPeriod> *periods;
+/**
+ An array of postFields of the post
+ @see EMPPostField
+ */
+@property RLMArray<EMPPostField *><EMPPostField> *postFields;
 /**
  The beacon object(s) the post is assigned to
 

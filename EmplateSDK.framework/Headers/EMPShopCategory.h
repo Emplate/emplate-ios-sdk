@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
  An array of the Shop Category's shops
  @see EMPShop
  */
-@property (nullable) RLMArray<EMPShop *><EMPShop> *shops;
+@property RLMArray<EMPShop *><EMPShop> *shops;
 /**
  Date of creation in the Emplate API
  */

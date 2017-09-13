@@ -45,21 +45,21 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The guest's actions
  */
-@property (nullable) RLMArray<EMPAction *><EMPAction> *actions;
+@property RLMArray<EMPAction *><EMPAction> *actions;
 /**
  The guest's redemptions
  */
-@property (nullable) RLMArray<EMPRedemption *><EMPRedemption> *redemptions;
+@property RLMArray<EMPRedemption *><EMPRedemption> *redemptions;
 /**
  The shops the guest subscribed to
  @see EMPSubscriptionManager
  */
-@property (nullable) RLMArray<EMPShop *><EMPShop> *shops;
+@property RLMArray<EMPShop *><EMPShop> *shops;
 /**
  The posts the guest saved in the Inbox
  @see EMPInboxManager
  */
-@property (nullable) RLMArray<EMPPost *><EMPPost> *posts;
+@property RLMArray<EMPPost *><EMPPost> *posts;
 /**
  Date of creation in the Emplate API
  */

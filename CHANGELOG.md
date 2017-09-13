@@ -1,4 +1,9 @@
 # Change Log
+
+## Version 1.2.0 (2017-09-13)
+* Added EMPPostField model
+* All RLMArrays on models is now nonnull
+
 ## Version 1.1.1 (2017-09-07)
 * Added checkinsPerWeek to the EMPOrganization model
 

@@ -56,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
  An array of posts on the beacon
  @see EMPPost
  */
-@property (nullable) RLMArray<EMPPost *><EMPPost> *posts;
+@property RLMArray<EMPPost *><EMPPost> *posts;
 /**
  The Shop object(s) the beacon is assigned to
  @discussion A Beacon can only be assigned to one Shop in the Emplate API, but Realm will find all shops linking to this beacon. In all normal cases this collection will only contain a single Shop

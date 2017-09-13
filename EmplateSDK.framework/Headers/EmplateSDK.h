@@ -33,6 +33,12 @@
 #import "EMPShop.h"
 #import "EMPShopCategory.h"
 #import "EMPToken.h"
+#import "EMPPostField.h"
+#import "EMPPostFieldCallToAction.h"
+#import "EMPPostFieldCoupon.h"
+#import "EMPPostFieldImages.h"
+#import "EMPPostFieldText.h"
+#import "EMPPostFieldVideo.h"
 
 // Categories
 #import "UIDevice+EMPBeaconSupport.h"

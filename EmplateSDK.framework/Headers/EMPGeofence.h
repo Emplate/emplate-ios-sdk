@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
  An array of posts on the geofence
  @see EMPPost
  */
-@property (nullable) RLMArray<EMPPost *><EMPPost> *posts;
+@property RLMArray<EMPPost *><EMPPost> *posts;
 /**
  Date of creation in the Emplate API
  */

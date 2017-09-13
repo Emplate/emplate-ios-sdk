@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
  An array of beacons on the BeaconCategory
  @see EMPBeacon
  */
-@property (nullable) RLMArray<EMPBeacon *><EMPBeacon> *beacons;
+@property RLMArray<EMPBeacon *><EMPBeacon> *beacons;
 /**
  Date of creation in the Emplate API
  */

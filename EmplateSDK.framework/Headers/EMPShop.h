@@ -78,7 +78,7 @@ NS_ASSUME_NONNULL_BEGIN
  An array of the shop's beacon
  @see EMPBeacon
  */
-@property (nullable) RLMArray<EMPBeacon *><EMPBeacon> *beacons;
+@property RLMArray<EMPBeacon *><EMPBeacon> *beacons;
 /**
  The ShopCategory object(s) the beacon is assigned to
  @see EMPShopCategory

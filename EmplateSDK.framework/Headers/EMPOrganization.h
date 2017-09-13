@@ -46,12 +46,12 @@ NS_ASSUME_NONNULL_BEGIN
  An array of all the organizations shops
  @see EMPAudience
  */
-@property (nullable) RLMArray<EMPShop *><EMPShop> *shops;
+@property RLMArray<EMPShop *><EMPShop> *shops;
 /**
  An array of all the organizations audiences
  @see EMPAudience
  */
-@property (nullable) RLMArray<EMPAudience *><EMPAudience> *audiences;
+@property RLMArray<EMPAudience *><EMPAudience> *audiences;
 /**
  A URL string for the organization image
  */
