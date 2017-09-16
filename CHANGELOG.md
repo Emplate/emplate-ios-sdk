@@ -1,4 +1,6 @@
 # Change Log
+## Version 1.2.1 (2017-09-16)
+* Fixed bug regarding the checkinsPerWeek on EMPOrganization
 
 ## Version 1.2.0 (2017-09-13)
 * Added EMPPostField model
