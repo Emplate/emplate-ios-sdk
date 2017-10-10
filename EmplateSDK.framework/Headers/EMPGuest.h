@@ -56,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property RLMArray<EMPShop *><EMPShop> *shops;
 /**
- The posts the guest saved in the Inbox
+ The posts the guest has in the Inbox
  @see EMPInboxManager
  */
 @property RLMArray<EMPPost *><EMPPost> *posts;

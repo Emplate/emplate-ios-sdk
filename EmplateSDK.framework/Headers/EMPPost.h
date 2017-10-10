@@ -69,6 +69,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property BOOL read;
 /**
+ A boolean indicating if a post has been saved
+ */
+@property BOOL saved;
+/**
  A boolean indicating that the post is active
 
  _A post is active if it has one or more active EMPPostPeriods or no periods at all._

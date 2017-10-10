@@ -1,4 +1,10 @@
 # Change Log
+## Version 1.3.0 (2017-10-10)
+* Added save functionality for EMPPosts in the EMPInboxManager
+* EMPPostFieldCoupon is now returning nil on empty strings on `price`, `discount` and `text`
+* App icon badge is now updated on the main thread
+* Updated Realm to 2.10.2
+
 ## Version 1.2.1 (2017-09-16)
 * Fixed bug regarding the checkinsPerWeek on EMPOrganization
 

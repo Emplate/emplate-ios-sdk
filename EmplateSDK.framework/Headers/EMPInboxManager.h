@@ -24,9 +24,17 @@
  */
 @property (readonly) RLMArray<EMPPost *> *allPosts;
 /**
- An array of all saved active posts
+ An array of all active posts
  */
 @property (readonly) RLMResults<EMPPost *> *activePosts;
+/**
+ An array of all saved posts
+ */
+@property (readonly) RLMArray<EMPPost *> *savedPosts;
+/**
+ An array of all active saved posts
+ */
+@property (readonly) RLMResults<EMPPost *> *activeSavedPosts;
 /**
  The number of unread posts
  */
@@ -36,9 +44,17 @@
 
  @param post The EMPPost
 
- @return BOOL indicating if the post is saved
+ @return BOOL indicating if the post is added to the Inbox
  */
 - (BOOL)isPostAdded:(EMPPost *)post;
+/**
+ Is the post saved in the Inbox?
+ 
+ @param post The EMPPost
+ 
+ @return BOOL indicating if the post is saved in the Inbox
+ */
+- (BOOL)isPostSaved:(EMPPost *)post;
 
 #pragma mark - Setting
 
@@ -70,6 +86,13 @@
  @param post The EMPPost to mark its read status as the same as the read parameter
  */
 - (void)markPost:(EMPPost *)post asRead:(BOOL)read;
+/**
+ Marks a post as either saved or unsaved depending on the saved parameter
+ @see EMPPost
+ 
+ @param post The EMPPost to mark its saved status as the same as the saved parameter
+ */
+- (void)markPost:(EMPPost *)post asSaved:(BOOL)Saved;
 
 #pragma mark - Singleton
 
