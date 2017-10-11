@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'EmplateSDK'
-  s.version               = '1.3.0'
+  s.version               = '1.3.1'
   s.summary               = 'The Emplate iOS SDK.'
   s.homepage              = 'http://emplate.it'
   s.author                = { 'Emplate ApS' => 'http://emplate.it' }
@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
   s.preserve_path         = 'EmplateSDK.framework'
   s.module_map            = 'EmplateSDK.framework/Modules/module.modulemap'
   s.frameworks            = 'UIKit', 'Foundation', 'SystemConfiguration', 'MobileCoreServices', 'CoreBluetooth', 'CoreLocation'
-  s.dependency 'Realm', '~>2.8.3'
+  s.dependency 'Realm', '~>2.10.2'
 end

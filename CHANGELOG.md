@@ -1,4 +1,7 @@
 # Change Log
+## Version 1.3.1 (2017-10-11)
+* Updated Realm dependency to 2.10.2
+
 ## Version 1.3.0 (2017-10-10)
 * Added save functionality for EMPPosts in the EMPInboxManager
 * EMPPostFieldCoupon is now returning nil on empty strings on `price`, `discount` and `text`
