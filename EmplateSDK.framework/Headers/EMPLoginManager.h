@@ -10,6 +10,7 @@
 #import "EMPGuest.h"
 #import "EMPDefines.h"
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  The `EMPLoginManager` is used to sign up and in to the Emplate API.
  */
@@ -23,7 +24,7 @@
 
 + (void)signInWithFacebookUserId:(NSString *)userId accessToken:(NSString *)accessToken completion:(EMPErrorBlock)completion;
 
-+ (void)signUpWithEmail:(NSString *)email firstName:(NSString *)firstName lastName:(NSString *)lastName password:(NSString *)password age:(NSNumber *)age completion:(EMPErrorBlock)completion;
++ (void)signUpWithEmail:(NSString *)email firstName:(NSString *)firstName lastName:(nullable NSString *)lastName password:(NSString *)password age:(nullable NSNumber *)age completion:(EMPErrorBlock)completion;
 
 + (void)signInWithEmail:(NSString *)email password:(NSString *)password completion:(EMPErrorBlock)completion;
 
@@ -38,6 +39,8 @@
 + (BOOL)isSignedInWithEmailPassword;
 
 @end
+
+NS_ASSUME_NONNULL_END
 
 #define EMPAuthFBUserId @"EMPAuthFBUserId"
 #define EMPAuthFBAccessToken @"EMPAuthFBAccessToken"

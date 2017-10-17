@@ -10,6 +10,7 @@
 
 @class EMPShop;
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  This is the EMPSubscriptionManager which is used to subscribe the user to one or more EMPShop objects.
 
@@ -69,3 +70,5 @@
 + (EMPSubscriptionManager *)sharedManager;
 
 @end
+
+NS_ASSUME_NONNULL_END

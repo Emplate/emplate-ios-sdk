@@ -8,11 +8,14 @@
 
 @import Foundation;
 #import "EMPDefines.h"
+NS_ASSUME_NONNULL_BEGIN
 
 @interface EMPPushManager : NSObject
 
-+ (void)createEndpointWithDeviceToken:(nonnull NSData *)deviceToken completion:(nonnull EMPErrorBlock)completion;
++ (void)createEndpointWithDeviceToken:(NSData *)deviceToken completion:(EMPErrorBlock)completion;
 
-+ (void)updateGuestIdForEndpointWithCompletion:(nonnull EMPErrorBlock)completion;
++ (void)updateGuestIdForEndpointWithCompletion:(EMPErrorBlock)completion;
 
 @end
+
+NS_ASSUME_NONNULL_END

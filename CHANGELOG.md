@@ -1,4 +1,7 @@
 # Change Log
+## Version 1.3.2 (2017-10-17)
+* Added nullability to EMPLoginManager, EMPSubscriptionManager and EMPPushManager
+
 ## Version 1.3.1 (2017-10-11)
 * Updated Realm dependency to 2.10.2
 

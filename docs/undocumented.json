@@ -184,84 +184,84 @@
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPLoginManager.h",
-      "line": 18,
+      "line": 19,
       "symbol": "EMPLoginManager.+currentGuest",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPLoginManager.h",
-      "line": 20,
+      "line": 21,
       "symbol": "EMPLoginManager.+ensureGuestWithCompletion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPLoginManager.h",
-      "line": 22,
+      "line": 23,
       "symbol": "EMPLoginManager.+refreshCurrentGuestWithCompletion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPLoginManager.h",
-      "line": 24,
+      "line": 25,
       "symbol": "EMPLoginManager.+signInWithFacebookUserId:accessToken:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPLoginManager.h",
-      "line": 26,
+      "line": 27,
       "symbol": "EMPLoginManager.+signUpWithEmail:firstName:lastName:password:age:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPLoginManager.h",
-      "line": 28,
+      "line": 29,
       "symbol": "EMPLoginManager.+signInWithEmail:password:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPLoginManager.h",
-      "line": 30,
+      "line": 31,
       "symbol": "EMPLoginManager.+refreshJWTTokenWithCompletion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPLoginManager.h",
-      "line": 32,
+      "line": 33,
       "symbol": "EMPLoginManager.+signOutWithCompletion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPLoginManager.h",
-      "line": 34,
+      "line": 35,
       "symbol": "EMPLoginManager.+isSignedIn",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPLoginManager.h",
-      "line": 36,
+      "line": 37,
       "symbol": "EMPLoginManager.+isSignedInWithFacebook",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPLoginManager.h",
-      "line": 38,
+      "line": 39,
       "symbol": "EMPLoginManager.+isSignedInWithEmailPassword",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPPushManager.h",
-      "line": 12,
+      "line": 13,
       "symbol": "EMPPushManager",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
