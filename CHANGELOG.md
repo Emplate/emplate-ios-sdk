@@ -1,4 +1,8 @@
 # Change Log
+## Version 1.4.0 (2017-10-23)
+* Added cost and title to the EMPRedemption model
+* Added redemption warning to the EMPOrganization and the EMPPrize
+
 ## Version 1.3.2 (2017-10-17)
 * Added nullability to EMPLoginManager, EMPSubscriptionManager and EMPPushManager
 

@@ -2,8 +2,8 @@
 //  EMPOrganization.h
 //  EmplateSDK
 //
-//  Created by SÃ¸ren Gregersen on 17/10/2015.
-//  Copyright Â© 2015 Emplate ApS. All rights reserved.
+//  Created by Søren Gregersen on 17/10/2015.
+//  Copyright © 2015 Emplate ApS. All rights reserved.
 //
 
 @import UIKit;
@@ -75,6 +75,10 @@ NS_ASSUME_NONNULL_BEGIN
  @see EMPAction
  */
 @property int checkinsPerWeek;
+/**
+ Warning when redeeming the prize
+ */
+@property NSString *prizeWarning;
 /**
  Date of creation in the Emplate API
  */

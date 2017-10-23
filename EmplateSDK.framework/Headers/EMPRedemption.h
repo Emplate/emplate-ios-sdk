@@ -30,6 +30,14 @@ NS_ASSUME_NONNULL_BEGIN
  Date of creation in the Emplate API
  */
 @property (nullable) NSDate *createdAt;
+/**
+ The prize cost
+ */
+@property NSInteger cost;
+/**
+ The prize title
+ */
+@property NSString *title;
 
 @end
 NS_ASSUME_NONNULL_END

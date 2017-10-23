@@ -47,6 +47,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable) NSString *prizeLimitRulesKey;
 /**
+ Warning when redeeming the prize
+ */
+@property (nullable) NSString *warning;
+/**
  Date of creation in the Emplate API
  */
 @property (nullable) NSDate *createdAt;
