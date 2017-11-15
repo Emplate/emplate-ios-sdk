@@ -36,3 +36,10 @@ typedef enum {
     EMPImageSizeMobile,
     EMPImageSizeFull
 } EMPImageSize;
+
+typedef enum {
+    EMPApiEnvironmentNone = 0,
+    EMPApiEnvironmentDevelopment,
+    EMPApiEnvironmentProduction,
+    EMPApiEnvironmentPlay
+} EMPApiEnvironment;

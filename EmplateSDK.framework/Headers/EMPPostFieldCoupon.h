@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Properties
 @property (readonly) NSURL *image;
 @property (readonly, nullable) NSString *text;
+@property (readonly, nullable) NSString *priceBefore;
 @property (readonly, nullable) NSString *price;
 @property (readonly, nullable) NSString *discount;
 @property (readonly) BOOL redeemable;

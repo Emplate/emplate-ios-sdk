@@ -1,4 +1,8 @@
 # Change Log
+## 1.5.0 (2017-11-15)
+* Added price before to the EMPPostFieldCoupon
+* EMPApiEnvironment should be set directly on the EMPApiClient
+
 ## Version 1.4.0 (2017-10-23)
 * Added cost and title to the EMPRedemption model
 * Added redemption warning to the EMPOrganization and the EMPPrize

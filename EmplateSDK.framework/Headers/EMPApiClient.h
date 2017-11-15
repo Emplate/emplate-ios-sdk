@@ -24,6 +24,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) NSURL *baseURL;
 @property (readonly) NSURLSession *urlSession;
 
+#pragma mark - Api environment
+// Api environment property (defaults to development)
+@property EMPApiEnvironment environment;
+
 #pragma mark - Get data
 // All objects from class (/objectClass)
 - (void)getObjects:(Class <EMPApiModel>)objectClass includes:(nullable NSString *)includes limitFields:(nullable NSDictionary<NSString *, NSString *> *)limitFields completion:(EMPObjectsBlock)completion;
