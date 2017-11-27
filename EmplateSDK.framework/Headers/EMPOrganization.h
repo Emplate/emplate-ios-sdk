@@ -2,8 +2,8 @@
 //  EMPOrganization.h
 //  EmplateSDK
 //
-//  Created by Søren Gregersen on 17/10/2015.
-//  Copyright © 2015 Emplate ApS. All rights reserved.
+//  Created by SÂ¯ren Gregersen on 17/10/2015.
+//  Copyright Â© 2015 Emplate ApS. All rights reserved.
 //
 
 @import UIKit;
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  This is the EMPOrganization Model.
-
+ 
  The EMPOrganization objects contains information about the organization from the Emplate API.
  */
 @interface EMPOrganization : EMPApiModel
@@ -76,6 +76,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property int checkinsPerWeek;
 /**
+ A number indicating how many exclusive prizes a guest can redeem in 365 days
+ @see EMPPrize
+ */
+@property int exclusiveMax;
+/**
  Warning when redeeming the prize
  */
 @property NSString *prizeWarning;
@@ -101,17 +106,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) CLLocationCoordinate2D coordinate;
 /**
  Get the URL for the image in a certain size.
-
+ 
  @param imageSize One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull
-
+ 
  @return The URL for the organization image in the given size.
  */
 - (nullable NSURL *)imageURLWithSize:(EMPImageSize)imageSize;
 /**
  Get the URL for the logo in a certain size.
-
+ 
  @param imageSize One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull
-
+ 
  @return The URL for the organization logo in the given size.
  */
 - (nullable NSURL *)logoURLWithSize:(EMPImageSize)imageSize;
@@ -119,3 +124,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 NS_ASSUME_NONNULL_END
 RLM_ARRAY_TYPE(EMPOrganization);
+
