@@ -1,4 +1,11 @@
 # Change Log
+## 2.0.0 (2017-11-27)
+* The EmplateSDK is now using the new version 4 of the Emplate API to get the latest featus for the bonus programme
+* Added new fields to the EMPPrize (`canUserRedeem`, `errorMessage`, `infoMessage` and `limits`)
+* Removed `prizeLimitRulesKey` from EMPPrize
+* Added new field to the EMPOrganization (`exclusiveMax`)
+* Bumped Realm dependency to v3.0.0
+
 ## 1.5.0 (2017-11-15)
 * Added price before to the EMPPostFieldCoupon
 * EMPApiEnvironment should be set directly on the EMPApiClient

@@ -43,13 +43,25 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable) NSString *imageURL;
 /**
- A string indicating the prize limit rule
- */
-@property (nullable) NSString *prizeLimitRulesKey;
-/**
  Warning when redeeming the prize
  */
 @property (nullable) NSString *warning;
+/**
+ Is the user able to redeem the prize at the time the prize is loaded from the API?
+ */
+@property BOOL userCanRedeem;
+/**
+ The error message to show when the prize can't be redeemed
+ */
+@property (nullable) NSString *errorMessage;
+/**
+ The info to show for the prize if it's limited
+ */
+@property (nullable) NSString *infoMessage;
+/**
+ A JSON encoded array of the applied prize limits
+ */
+@property (nullable) NSString *limits;
 /**
  Date of creation in the Emplate API
  */
@@ -58,6 +70,10 @@ NS_ASSUME_NONNULL_BEGIN
  Date of last update in the Emplate API
  */
 @property (nullable) NSDate *updatedAt;
+/**
+ Is the prize limited as an exclusive prize?
+ */
+@property (readonly) BOOL isExclusive;
 /**
  Get the URL for the thumbnail in a certain size.
 
