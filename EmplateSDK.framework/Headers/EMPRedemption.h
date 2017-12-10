@@ -22,11 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable) NSNumber<RLMInt> *redemptionId;
 /**
- The prize the redemption was created for
- @see EMPPrize
- */
-@property (nullable) EMPPrize *prize;
-/**
  Date of creation in the Emplate API
  */
 @property (nullable) NSDate *createdAt;
