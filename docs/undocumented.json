@@ -30,98 +30,105 @@
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 24,
+      "line": 25,
       "symbol": "EMPApiClient.baseURL",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 25,
+      "line": 26,
       "symbol": "EMPApiClient.urlSession",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 29,
+      "line": 30,
       "symbol": "EMPApiClient.environment",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 33,
+      "line": 34,
       "symbol": "EMPApiClient.-getObjects:includes:limitFields:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 36,
+      "line": 37,
       "symbol": "EMPApiClient.-getObject:withId:includes:limitFields:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 39,
+      "line": 40,
       "symbol": "EMPApiClient.-getObjects:relatedTo:withId:includes:limitFields:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 42,
+      "line": 43,
       "symbol": "EMPApiClient.-getObject:relatedTo:withId:includes:limitFields:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 48,
+      "line": 49,
       "symbol": "EMPApiClient.-postObject:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 50,
+      "line": 51,
       "symbol": "EMPApiClient.-postObjects:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 52,
+      "line": 53,
       "symbol": "EMPApiClient.-postAndSaveObject:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 56,
+      "line": 57,
       "symbol": "EMPApiClient.-syncRelations:forObject:withRelationshipString:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 60,
+      "line": 61,
+      "symbol": "EMPApiClient.-redeemPrize:completion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "line": 65,
       "symbol": "EMPApiClient.-newJWTTokenWithCompletion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 62,
+      "line": 67,
       "symbol": "EMPApiClient.-createNewGuestWithEmail:password:firstName:lastName:age:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
-      "line": 64,
+      "line": 69,
       "symbol": "EMPApiClient.-getCurrentGuestWithCompletion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"

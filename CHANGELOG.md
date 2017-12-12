@@ -1,4 +1,7 @@
 # Change Log
+## 2.0.2 (2017-12-12)
+* Added method in EMPApiClient to make redemptions for prizes
+
 ## 2.0.1 (2017-12-10)
 * Removed prize relation on EMPRedemption
 

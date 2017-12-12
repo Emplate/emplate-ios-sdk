@@ -12,6 +12,7 @@
 @class RLMObject;
 @class RLMArray;
 @class EMPApiModel;
+@class EMPPrize;
 @protocol EMPApiModel;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -54,6 +55,10 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Update data
 
 - (void)syncRelations:(RLMArray *)relations forObject:(EMPApiModel *)object withRelationshipString:(nullable NSString *)relationshipString completion:(EMPErrorBlock)completion;
+
+#pragma mark - Redemptions
+
+- (void)redeemPrize:(NSNumber *)prizeId completion:(EMPErrorBlock)completion;
 
 #pragma mark - Authorization
 
