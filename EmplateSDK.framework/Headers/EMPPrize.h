@@ -63,6 +63,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable) NSString *limits;
 /**
+ How many exclusive redemptions does the guest has left?
+ */
+@property NSInteger exclusiveLeft;
+/**
+ If the guest has no exclusive redemptions left, this date shows when the guest can redeem again
+ */
+@property (nullable) NSDate *exclusiveNextRedemption;
+/**
  Date of creation in the Emplate API
  */
 @property (nullable) NSDate *createdAt;

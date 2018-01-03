@@ -429,7 +429,7 @@
     },
     {
       "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPrize.h",
-      "line": 87,
+      "line": 95,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"

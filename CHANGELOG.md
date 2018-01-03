@@ -1,4 +1,7 @@
 # Change Log
+## 2.1.0 (2018-01-03)
+* Added exclusiveLeft and exclusiveNextRedemption to EMPPrize
+
 ## 2.0.2 (2017-12-12)
 * Added method in EMPApiClient to make redemptions for prizes
 
