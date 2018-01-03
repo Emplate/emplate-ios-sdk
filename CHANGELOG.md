@@ -1,4 +1,7 @@
 # Change Log
+## 2.1.1 (2018-01-03)
+* Fixed a bug in the EMPApiModel JSON parsing logic
+
 ## 2.1.0 (2018-01-03)
 * Added exclusiveLeft and exclusiveNextRedemption to EMPPrize
 
