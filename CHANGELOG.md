@@ -1,4 +1,7 @@
 # Change Log
+## 2.1.2 (2018-01-04)
+* Fixed another bug in the EMPApiModel JSON parsing logic
+
 ## 2.1.1 (2018-01-03)
 * Fixed a bug in the EMPApiModel JSON parsing logic
 
