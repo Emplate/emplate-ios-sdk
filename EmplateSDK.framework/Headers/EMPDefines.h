@@ -43,3 +43,6 @@ typedef enum {
     EMPApiEnvironmentProduction,
     EMPApiEnvironmentPlay
 } EMPApiEnvironment;
+
+#define EMPAuthFBUserId @"EMPAuthFBUserId"
+#define EMPAuthJWTToken @"EMPAuthJWTToken"

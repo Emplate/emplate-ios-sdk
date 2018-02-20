@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface EMPApiClient : NSObject
 
 @property (readonly) NSURL *baseURL;
+@property (readonly) NSURL *baseURLV5;
 @property (readonly) NSURLSession *urlSession;
 
 #pragma mark - Api environment
@@ -59,14 +60,6 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Redemptions
 
 - (void)redeemPrize:(NSNumber *)prizeId completion:(EMPErrorBlock)completion;
-
-#pragma mark - Authorization
-
-- (void)newJWTTokenWithCompletion:(EMPErrorBlock)completion;
-
-- (void)createNewGuestWithEmail:(NSString *)email password:(NSString *)password firstName:(NSString *)firstName lastName:(nullable NSString *)lastName age:(nullable NSNumber *)age completion:(EMPErrorBlock)completion;
-
-- (void)getCurrentGuestWithCompletion:(EMPObjectBlock)completion;
 
 /**
  The shared instance of EMPApiClient

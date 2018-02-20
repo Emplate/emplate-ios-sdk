@@ -12,7 +12,6 @@
 #import "EMPBeaconManager.h"
 #import "EMPInboxManager.h"
 #import "EMPSubscriptionManager.h"
-#import "EMPLoginManager.h"
 #import "EMPRealm.h"
 #import "EMPPushManager.h"
 

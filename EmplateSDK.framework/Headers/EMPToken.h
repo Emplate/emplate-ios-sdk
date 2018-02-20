@@ -7,37 +7,30 @@
 //
 
 @import Foundation;
-
+NS_ASSUME_NONNULL_BEGIN
 /**
  This is the EMPToken model.
 
- EMPToken objects are using when authenticating as a guest user in the Emplate API. A token has a content (the actually token) and an expiration date.
+ EMPToken objects are using when authenticating as a guest user in the Emplate API.
  */
 @interface EMPToken : NSObject
 
 /**
- The acutally token
+ The acutally token content
  */
 @property NSString *content;
 /**
- The date the action was created in the Emplate API
+ Init with a token content string
  */
-@property NSDate *expires;
-/**
- Indicates whether the token is not expired
- */
-@property (readonly) BOOL expired;
+- (instancetype)initWithContent:(NSString *)content;
 /**
  Saves the token to NSUserDefaults
  */
 - (void)saveToken;
 /**
- Creates a new token from JSON Data
- */
-+ (EMPToken *)newTokenWithData:(NSData *)data;
-/**
  Returns the saved current token
  */
-+ (EMPToken *)currentToken;
++ (nullable EMPToken *)currentToken;
 
 @end
+NS_ASSUME_NONNULL_END

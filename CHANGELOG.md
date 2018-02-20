@@ -1,4 +1,9 @@
 # Change Log
+## 3.0.0 (2018-02-20)
+* Bumped API version to v5
+* Removed EMPLoginManager and EMPToken
+* Lots of different minor changes
+
 ## 2.1.2 (2018-01-04)
 * Fixed another bug in the EMPApiModel JSON parsing logic
 

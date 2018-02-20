@@ -43,6 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable) NSString *lastName;
 /**
+ The email of the guest
+ */
+@property (nullable) NSString *email;
+/**
  The guest's actions
  */
 @property RLMArray<EMPAction *><EMPAction> *actions;
