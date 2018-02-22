@@ -1,4 +1,7 @@
 # Change Log
+## 3.0.1 (2018-02-22)
+* Fixed bug in EMPPushManager
+
 ## 3.0.0 (2018-02-20)
 * Bumped API version to v5
 * Removed EMPLoginManager and EMPToken
