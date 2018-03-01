@@ -10,6 +10,7 @@
 @import Realm;
 #import "EMPDefines.h"
 #import "EMPBeacon.h"
+#import "EMPVisitPeriod.h"
 #import "EMPApiModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
@@ -79,6 +80,11 @@ NS_ASSUME_NONNULL_BEGIN
  @see EMPBeacon
  */
 @property RLMArray<EMPBeacon *><EMPBeacon> *beacons;
+/**
+ An array of the shop's visit periods
+ @see EMPVisitPeriod
+ */
+@property RLMArray<EMPVisitPeriod *><EMPVisitPeriod> *visitPeriods;
 /**
  The ShopCategory object(s) the beacon is assigned to
  @see EMPShopCategory

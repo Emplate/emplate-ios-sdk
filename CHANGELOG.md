@@ -1,4 +1,7 @@
 # Change Log
+## 3.1.0 (2018-03-01)
+* Added EMPVisitPeriod model
+
 ## 3.0.1 (2018-02-22)
 * Fixed bug in EMPPushManager
 

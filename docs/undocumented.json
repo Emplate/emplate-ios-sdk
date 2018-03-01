@@ -1,369 +1,390 @@
 {
   "warnings": [
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/EMPDefines.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/EMPDefines.h",
       "line": 34,
       "symbol": "",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/EMPDefines.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/EMPDefines.h",
       "line": 34,
       "symbol": "EMPImageSize",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/EMPDefines.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/EMPDefines.h",
       "line": 40,
       "symbol": "",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/EMPDefines.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/EMPDefines.h",
       "line": 40,
       "symbol": "EMPApiEnvironment",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 25,
       "symbol": "EMPApiClient.baseURL",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 26,
       "symbol": "EMPApiClient.baseURLV5",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 27,
       "symbol": "EMPApiClient.urlSession",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 31,
       "symbol": "EMPApiClient.environment",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 35,
       "symbol": "EMPApiClient.-getObjects:includes:limitFields:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 38,
       "symbol": "EMPApiClient.-getObject:withId:includes:limitFields:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 41,
       "symbol": "EMPApiClient.-getObjects:relatedTo:withId:includes:limitFields:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 44,
       "symbol": "EMPApiClient.-getObject:relatedTo:withId:includes:limitFields:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 50,
       "symbol": "EMPApiClient.-postObject:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 52,
       "symbol": "EMPApiClient.-postObjects:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 54,
       "symbol": "EMPApiClient.-postAndSaveObject:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 58,
       "symbol": "EMPApiClient.-syncRelations:forObject:withRelationshipString:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 62,
       "symbol": "EMPApiClient.-redeemPrize:completion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
       "line": 42,
       "symbol": "EMPBeaconManager.-addDelegate:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
       "line": 44,
       "symbol": "EMPBeaconManager.-removeDelegate:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
       "line": 79,
       "symbol": "EMPBeaconManager.-startSearchingForBeaconRegion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
       "line": 81,
       "symbol": "EMPBeaconManager.-stopSearchingForBeaconRegion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
       "line": 85,
       "symbol": "EMPBeaconManager.-startSearchingForGeofence:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
       "line": 87,
       "symbol": "EMPBeaconManager.-stopSearchingForGeofence:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
       "line": 164,
       "symbol": "EMPBeaconManagerDelegate.-beaconManagerDidRangeCLBeacons:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
       "line": 166,
       "symbol": "EMPBeaconManagerDelegate.-beaconManagerDidEnterRegion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
       "line": 168,
       "symbol": "EMPBeaconManagerDelegate.-beaconManagerDidExitRegion:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
       "line": 170,
       "symbol": "EMPBeaconManagerDelegate.-beaconManagerDidEnterRegionWithGeofence:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPBeaconManager.h",
       "line": 172,
       "symbol": "EMPBeaconManagerDelegate.-beaconManagerDidExitRegionWithGeofence:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPPushManager.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPPushManager.h",
       "line": 13,
       "symbol": "EMPPushManager",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Managers/EMPRealm.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPRealm.h",
       "line": 12,
       "symbol": "EMPRealm",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPAction.h",
-      "line": 46,
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPAction.h",
+      "line": 54,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPApiModel.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPApiModel.h",
       "line": 14,
       "symbol": "EMPApiModel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPApiModel.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPApiModel.h",
       "line": 56,
       "symbol": "EMPApiModel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPAudience.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPAudience.h",
       "line": 44,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPBeacon.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPBeacon.h",
       "line": 114,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPGuest.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPBeaconCategory.h",
+      "line": 44,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPGeofence.h",
+      "line": 92,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPGuest.h",
       "line": 78,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPOrganization.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPOrganization.h",
       "line": 126,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPost.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPost.h",
       "line": 93,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostField.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostField.h",
       "line": 15,
       "symbol": "",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostField.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostField.h",
       "line": 15,
       "symbol": "EMPPostFieldType",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostField.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostField.h",
       "line": 64,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostFieldCallToAction.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostFieldCallToAction.h",
       "line": 12,
       "symbol": "EMPPostFieldCallToAction",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostFieldCoupon.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostFieldCoupon.h",
       "line": 12,
       "symbol": "EMPPostFieldCoupon",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostFieldImages.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostFieldImages.h",
       "line": 12,
       "symbol": "EMPPostFieldImages",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostFieldText.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostFieldText.h",
       "line": 12,
       "symbol": "EMPPostFieldText",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostFieldVideo.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostFieldVideo.h",
       "line": 12,
       "symbol": "EMPPostFieldVideo",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostPeriod.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostPeriod.h",
       "line": 50,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostView.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostView.h",
       "line": 52,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPPrize.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPrize.h",
       "line": 95,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPRedemption.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPRedemption.h",
       "line": 39,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPShop.h",
-      "line": 112,
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPShop.h",
+      "line": 118,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/soren/Git/Emplate/emplate-ios-sdk-source/EmplateSDK/Models/EMPShopCategory.h",
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPShopCategory.h",
       "line": 44,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPVisitPeriod.h",
+      "line": 49,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/soren/Git/Emplate/emplate-ios-sdk-source"
+  "source_directory": "/Users/soren/Git/emplate-ios-sdk-source"
 }

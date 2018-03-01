@@ -29,6 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property NSString *name;
 /**
+ The subject name of the action
+ */
+@property (nullable) NSString *subjectName;
+/**
  The value of the action
  */
 @property NSInteger value;
@@ -40,6 +44,10 @@ NS_ASSUME_NONNULL_BEGIN
  Date of last update in the Emplate API
  */
 @property NSDate *updatedAt;
+/**
+ Only used when creating shop visits
+ */
+@property NSInteger visitPeriodId;
 
 @end
 NS_ASSUME_NONNULL_END
