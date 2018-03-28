@@ -45,9 +45,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property NSDate *updatedAt;
 /**
- Only used when creating shop visits
+ Only used when creating region visits
  */
-@property NSInteger visitPeriodId;
+@property NSInteger regionId;
 
 @end
 NS_ASSUME_NONNULL_END

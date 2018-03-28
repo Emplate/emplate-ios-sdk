@@ -268,7 +268,7 @@
     },
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPOrganization.h",
-      "line": 126,
+      "line": 132,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
@@ -365,8 +365,15 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPRegion.h",
+      "line": 55,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPShop.h",
-      "line": 118,
+      "line": 112,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
@@ -374,13 +381,6 @@
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPShopCategory.h",
       "line": 44,
-      "symbol": "RLM_ARRAY_TYPE",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPVisitPeriod.h",
-      "line": 49,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"

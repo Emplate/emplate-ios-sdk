@@ -1,4 +1,7 @@
 # Change Log
+## 3.3.0 (2018-03-28)
+* Added EMPRegion instead of EMPVisitPeriod
+
 ## 3.2.0 (2018-03-16)
 * Enabled SSL pinning on all network requests
 

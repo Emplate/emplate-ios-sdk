@@ -11,6 +11,7 @@
 #import "EMPDefines.h"
 #import "EMPAudience.h"
 #import "EMPShop.h"
+#import "EMPRegion.h"
 #import "EMPApiModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -44,9 +45,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable) NSString *colorString;
 /**
  An array of all the organizations shops
- @see EMPAudience
+ @see EMPShop
  */
 @property RLMArray<EMPShop *><EMPShop> *shops;
+/**
+ An array of all the organizations regions
+ @see EMPRegion
+ */
+@property RLMArray<EMPRegion *><EMPRegion> *regions;
 /**
  An array of all the organizations audiences
  @see EMPAudience
