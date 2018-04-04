@@ -1,4 +1,7 @@
 # Change Log
+## 3.4.1 (2018-04-04)
+* Updated Realm dependency version in podspec file
+
 ## 3.4.0 (2018-04-04)
 * Updated Realm to 3.3.2
 * Bug fixes
