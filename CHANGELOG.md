@@ -1,4 +1,8 @@
 # Change Log
+## 3.4.0 (2018-04-04)
+* Updated Realm to 3.3.2
+* Bug fixes
+
 ## 3.3.0 (2018-03-28)
 * Added EMPRegion instead of EMPVisitPeriod
 

@@ -35,9 +35,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (nullable NSArray<NSString *> *)protectedProperties;
 
++ (instancetype)newObjectWithJSONDictionary:(NSDictionary *)JSONDictionary realm:(RLMRealm *)realm;
+
 + (instancetype)newObjectWithJSONDictionary:(NSDictionary *)JSONDictionary;
 
-+ (NSArray <id <EMPApiModel>> *)newObjectsWithJSONArray:(NSArray *)array;
++ (NSArray <EMPApiModel *> *)newObjectsWithJSONArray:(NSArray *)array;
 
 - (NSDictionary *)toDictionary;
 

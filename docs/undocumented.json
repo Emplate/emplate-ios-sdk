@@ -226,7 +226,7 @@
     },
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPApiModel.h",
-      "line": 56,
+      "line": 58,
       "symbol": "EMPApiModel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
