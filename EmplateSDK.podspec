@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'EmplateSDK'
-  s.version               = '3.4.1'
+  s.version               = '3.5.0'
   s.summary               = 'The Emplate iOS SDK.'
   s.homepage              = 'http://emplate.it'
   s.author                = { 'Emplate ApS' => 'http://emplate.it' }

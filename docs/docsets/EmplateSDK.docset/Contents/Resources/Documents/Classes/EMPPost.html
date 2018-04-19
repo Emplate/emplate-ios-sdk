@@ -168,6 +168,9 @@
             <a class="nav-group-name-link" href="../Other Classes.html">Other Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EMPMedia.html">EMPMedia</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/EMPRegion.html">EMPRegion</a>
               </li>
             </ul>
@@ -293,38 +296,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EMPPost(py)thumbnailURL"></a>
-                    <a name="//apple_ref/objc/Property/thumbnailURL" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EMPPost(py)thumbnailURL">thumbnailURL</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A URL for the organization image</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">thumbnailURL</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">thumbnailURL</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/c:objc(cs)EMPPost(py)periods"></a>
                     <a name="//apple_ref/objc/Property/periods" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)EMPPost(py)periods">periods</a>
@@ -380,6 +351,43 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">RLMArray</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">postFields</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMPPost(py)thumbnail"></a>
+                    <a name="//apple_ref/objc/Property/thumbnail" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMPPost(py)thumbnail">thumbnail</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The thumbnail for the post</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    EMPMedia
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n"><a href="../Classes/EMPMedia.html">EMPMedia</a></span> <span class="o">*</span><span class="n">thumbnail</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">thumbnail</span><span class="p">:</span> <span class="kt"><a href="../Classes/EMPMedia.html">EMPMedia</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -625,61 +633,6 @@
                           <pre class="highlight"><code><span class="k">var</span> <span class="nv">active</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)EMPPost(im)thumbnailURLWithSize:"></a>
-                    <a name="//apple_ref/objc/Method/-thumbnailURLWithSize:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EMPPost(im)thumbnailURLWithSize:">-thumbnailURLWithSize:</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Get the URL for the thumbnail in a certain size.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nf">thumbnailURLWithSize</span><span class="p">:(</span><span class="n">EMPImageSize</span><span class="p">)</span><span class="nv">imageSize</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">thumbnailURL</span><span class="p">(</span><span class="n">with</span> <span class="nv">imageSize</span><span class="p">:</span> <span class="kt">EMPImageSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>imageSize</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The URL for the post thumbnail in the given size.</p>
                       </div>
                     </section>
                   </div>

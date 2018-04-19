@@ -10,6 +10,7 @@
 @import Realm;
 #import "EMPApiModel.h"
 #import "EMPDefines.h"
+#import "EMPMedia.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -39,9 +40,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property BOOL active;
 /**
- A URL for the prize image
+ An image for the prize
  */
-@property (nullable) NSString *imageURL;
+@property (nullable) EMPMedia *image;
 /**
  Warning when redeeming the prize
  */
@@ -82,13 +83,6 @@ NS_ASSUME_NONNULL_BEGIN
  Is the prize limited as an exclusive prize?
  */
 @property (readonly) BOOL isExclusive;
-/**
- Get the URL for the thumbnail in a certain size.
-
- @param imageSize  One of the three sizes *EMPImageSizeThumbnail* | *EMPImageSizeMobile* | *EMPImageSizeFull*
- @return A `NSURL` for the image in the given size
- */
-- (nullable NSURL *)imageURLWithSize:(EMPImageSize)imageSize;
 
 @end
 NS_ASSUME_NONNULL_END

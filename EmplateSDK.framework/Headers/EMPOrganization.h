@@ -12,6 +12,7 @@
 #import "EMPAudience.h"
 #import "EMPShop.h"
 #import "EMPRegion.h"
+#import "EMPMedia.h"
 #import "EMPApiModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -59,13 +60,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property RLMArray<EMPAudience *><EMPAudience> *audiences;
 /**
- A URL string for the organization image
+ An image for the organization
  */
-@property (nullable) NSString *imageURLString;
+@property (nullable) EMPMedia *image;
 /**
- A URL string for the organization logo
+ A logo for the organization
  */
-@property (nullable) NSString *logoURLString;
+@property (nullable) EMPMedia *logo;
 /**
  A latitude degree of the organization
  @see coordinate
@@ -110,22 +111,6 @@ NS_ASSUME_NONNULL_BEGIN
  The location coordinate of the organization
  */
 @property (readonly) CLLocationCoordinate2D coordinate;
-/**
- Get the URL for the image in a certain size.
- 
- @param imageSize One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull
- 
- @return The URL for the organization image in the given size.
- */
-- (nullable NSURL *)imageURLWithSize:(EMPImageSize)imageSize;
-/**
- Get the URL for the logo in a certain size.
- 
- @param imageSize One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull
- 
- @return The URL for the organization logo in the given size.
- */
-- (nullable NSURL *)logoURLWithSize:(EMPImageSize)imageSize;
 
 @end
 NS_ASSUME_NONNULL_END

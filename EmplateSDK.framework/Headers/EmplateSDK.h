@@ -39,6 +39,7 @@
 #import "EMPPostFieldText.h"
 #import "EMPPostFieldVideo.h"
 #import "EMPRegion.h"
+#import "EMPMedia.h"
 
 // Categories
 #import "UIDevice+EMPBeaconSupport.h"

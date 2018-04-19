@@ -12,6 +12,7 @@
 #import "EMPPostPeriod.h"
 #import "EMPApiModel.h"
 #import "EMPPostField.h"
+#import "EMPMedia.h"
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -31,10 +32,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable) NSString *content;
 /**
- A URL for the organization image
- */
-@property (nullable) NSString *thumbnailURL;
-/**
  An array of periods where the post should be active
  @see EMPPostPeriod
  */
@@ -44,6 +41,11 @@ NS_ASSUME_NONNULL_BEGIN
  @see EMPPostField
  */
 @property RLMArray<EMPPostField *><EMPPostField> *postFields;
+/**
+ The thumbnail for the post
+ @see EMPMedia
+ */
+@property (nullable) EMPMedia *thumbnail;
 /**
  The beacon object(s) the post is assigned to
 
@@ -79,14 +81,6 @@ NS_ASSUME_NONNULL_BEGIN
  @see EMPPostPeriod
  */
 @property (readonly) BOOL active;
-/**
- Get the URL for the thumbnail in a certain size.
-
- @param imageSize One of the three sizes EMPImageSizeThumbnail | EMPImageSizeMobile | EMPImageSizeFull
-
- @return The URL for the post thumbnail in the given size.
- */
-- (nullable NSURL *)thumbnailURLWithSize:(EMPImageSize)imageSize;
 
 @end
 NS_ASSUME_NONNULL_END

@@ -38,7 +38,7 @@
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 26,
-      "symbol": "EMPApiClient.baseURLV5",
+      "symbol": "EMPApiClient.baseURLV6",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
@@ -267,15 +267,22 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPMedia.h",
+      "line": 52,
+      "symbol": "RLM_ARRAY_TYPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPOrganization.h",
-      "line": 132,
+      "line": 117,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPost.h",
-      "line": 93,
+      "line": 87,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
@@ -352,7 +359,7 @@
     },
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPrize.h",
-      "line": 95,
+      "line": 89,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
@@ -373,7 +380,7 @@
     },
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPShop.h",
-      "line": 112,
+      "line": 101,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"

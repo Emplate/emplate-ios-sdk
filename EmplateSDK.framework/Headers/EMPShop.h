@@ -11,6 +11,7 @@
 #import "EMPDefines.h"
 #import "EMPBeacon.h"
 #import "EMPApiModel.h"
+#import "EMPMedia.h"
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -31,17 +32,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property NSString *name;
 /**
- A URL string for the shop image
+ An image for the shop
  */
-@property (nullable) NSString *imageURLString;
+@property (nullable) EMPMedia *image;
 /**
  A URL string for the shop homepage
  */
 @property (nullable) NSString *homepageURLString;
 /**
- A URL string for the shop directions image
+ An image with the shop directions
  */
-@property (nullable) NSString *directionsURLString;
+@property (nullable) EMPMedia *directions;
 /**
  A string with details about the shop opening hours
  */
@@ -59,9 +60,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable) NSString *email;
 /**
- A string with a URL to the logo
+ A logo for the Shop
  */
-@property (nullable) NSString *logoURLString;
+@property (nullable) EMPMedia *logo;
 /**
  A string with a URL to facebook
  */
@@ -87,21 +88,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - URL Getters
 /**
- The URL for the shop image
- */
-@property (nullable, readonly) NSURL *imageURL;
-/**
  The shop's homepage as URL
  */
 @property (nullable, readonly) NSURL *homepageURL;
-/**
- The URL for the directions image
- */
-@property (nullable, readonly) NSURL *directionsURL;
-/**
- A URL to the logo
- */
-@property (nullable, readonly) NSURL *logoURL;
 /**
  A URL to facebook
  */

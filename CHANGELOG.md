@@ -1,4 +1,8 @@
 # Change Log
+## 3.5.0 (2018-04-19)
+* Added EMPMedia for all images on models
+* Bumped API version to v6
+
 ## 3.4.1 (2018-04-04)
 * Updated Realm dependency version in podspec file
 
