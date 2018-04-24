@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Api environment
 // Api environment property (defaults to development)
-@property EMPApiEnvironment environment;
+@property (nonatomic) EMPApiEnvironment environment;
 
 #pragma mark - Get data
 // All objects from class (/objectClass)

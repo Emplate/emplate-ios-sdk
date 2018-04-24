@@ -1,4 +1,8 @@
 # Change Log
+## 3.6.0 (2018-04-24)
+* Installed TrustKit 
+* Updated Realm to 3.4.0
+
 ## 3.5.0 (2018-04-19)
 * Added EMPMedia for all images on models
 * Bumped API version to v6
