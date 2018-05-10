@@ -1,4 +1,7 @@
 # Change Log
+## 3.6.1 (2018-05-10)
+* Sending app version in HTTP headers
+
 ## 3.6.0 (2018-04-24)
 * Installed TrustKit 
 * Updated Realm to 3.4.0
