@@ -1,4 +1,7 @@
 # Change Log
+## 3.6.3 (2018-09-11)
+* Changed enum for post field type
+
 ## 3.6.2 (2018-08-06)
 * Fixed a bug in the date formatter
 

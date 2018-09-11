@@ -290,7 +290,7 @@
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPostField.h",
       "line": 15,
-      "symbol": "",
+      "symbol": "EMPPostFieldType",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },

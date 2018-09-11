@@ -12,15 +12,15 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // An enum containing the different EMPPostFieldTypes
-typedef enum {
+typedef NS_ENUM(NSInteger, EMPPostFieldType) {
     EMPPostFieldTypeText = 1,
     EMPPostFieldTypeImages,
     EMPPostFieldTypeVideo,
     EMPPostFieldTypeFileToMail,
     EMPPostFieldTypeQuiz,
     EMPPostFieldTypeCoupon,
-    EMPPostFieldTypeCallToAction,
-} EMPPostFieldType;
+    EMPPostFieldTypeCallToAction
+};
 
 /**
  A PostField is the actual content of the Post. A post consist of one or more post fields. Post fields can be different types like text, image, video, coupon etc.
