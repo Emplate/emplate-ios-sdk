@@ -1,4 +1,7 @@
 # Change Log
+## 3.6.4 (2018-09-24)
+* Bugfix in inbox manager
+
 ## 3.6.3 (2018-09-11)
 * Changed enum for post field type
 

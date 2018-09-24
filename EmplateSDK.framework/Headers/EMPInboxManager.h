@@ -22,7 +22,7 @@
 /**
  An array of all saved posts
  */
-@property (readonly) RLMArray<EMPPost *> *allPosts;
+@property (readonly) RLMResults<EMPPost *> *allPosts;
 /**
  An array of all active posts
  */
@@ -30,7 +30,7 @@
 /**
  An array of all saved posts
  */
-@property (readonly) RLMArray<EMPPost *> *savedPosts;
+@property (readonly) RLMResults<EMPPost *> *savedPosts;
 /**
  An array of all active saved posts
  */
