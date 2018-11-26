@@ -61,11 +61,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Date of creation in the Emplate API
  */
-@property (nullable) NSDate *createdAt;
+@property NSDate *createdAt;
 /**
  Date of last update in the Emplate API
  */
-@property (nullable) NSDate *updatedAt;
+@property NSDate *updatedAt;
 /**
  A boolean indicating if a post has been read
  */
