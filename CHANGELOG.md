@@ -1,4 +1,7 @@
 # Change Log
+## 3.6.6 (2018-12-04)
+* Added shopCategories to EMPOrganization 
+
 ## 3.6.5 (2018-11-26)
 * Made created_at and updated_at on EMPPost nonnull
 

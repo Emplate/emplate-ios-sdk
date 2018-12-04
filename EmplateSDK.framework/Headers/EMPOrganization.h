@@ -10,7 +10,7 @@
 @import Realm;
 #import "EMPDefines.h"
 #import "EMPAudience.h"
-#import "EMPShop.h"
+#import "EMPShopCategory.h"
 #import "EMPRegion.h"
 #import "EMPMedia.h"
 #import "EMPApiModel.h"
@@ -45,10 +45,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable) NSString *colorString;
 /**
- An array of all the organizations shops
- @see EMPShop
+ An array of all the organizations shop categories
+ @see EMPShopCategory
  */
-@property RLMArray<EMPShop *><EMPShop> *shops;
+@property RLMArray<EMPShopCategory *><EMPShopCategory> *shopCategories;
 /**
  An array of all the organizations regions
  @see EMPRegion
