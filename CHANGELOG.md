@@ -1,4 +1,7 @@
 # Change Log
+## 3.6.7 (2019-01-04)
+* Bumped realm migration number
+
 ## 3.6.6 (2018-12-04)
 * Added shopCategories to EMPOrganization 
 
