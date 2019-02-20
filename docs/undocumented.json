@@ -282,7 +282,7 @@
     },
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPost.h",
-      "line": 87,
+      "line": 99,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
@@ -380,7 +380,7 @@
     },
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPShop.h",
-      "line": 101,
+      "line": 105,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"

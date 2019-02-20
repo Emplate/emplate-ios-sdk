@@ -1,4 +1,7 @@
 # Change Log
+## 3.6.8 (2019-02-20)
+* Added new stuff
+
 ## 3.6.7 (2019-01-04)
 * Bumped realm migration number
 

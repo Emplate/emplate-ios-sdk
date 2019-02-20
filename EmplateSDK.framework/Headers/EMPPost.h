@@ -47,6 +47,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable) EMPMedia *thumbnail;
 /**
+ A boolean indicating if a post can be reserved and collected in the shop
+ */
+@property BOOL collectible;
+/**
+ The name of the post
+ */
+@property (nullable) NSString *questionsJSON;
+/**
  The beacon object(s) the post is assigned to
 
  _A Post can only be assigned to one beacon in the Emplate API, but Realm will find all beacons linking to this post. In all normal cases this collection will only contain a single beacon._
@@ -81,6 +89,10 @@ NS_ASSUME_NONNULL_BEGIN
  @see EMPPostPeriod
  */
 @property (readonly) BOOL active;
+/**
+ A list of all questions for the post
+ */
+@property (readonly) NSArray<NSString *> *questions;
 
 @end
 NS_ASSUME_NONNULL_END

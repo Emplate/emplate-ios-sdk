@@ -68,6 +68,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable) NSString *facebookURLString;
 /**
+ Is Click & Collect enabled for the shop?
+ */
+@property BOOL cncEnabled;
+/**
  Date of creation in the Emplate API
  */
 @property (nullable) NSDate *createdAt;
