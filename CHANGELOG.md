@@ -1,4 +1,7 @@
 # Change Log
+## 3.6.9 (2019-02-20)
+* Updated Realm requirement
+
 ## 3.6.8 (2019-02-20)
 * Added new stuff
 
