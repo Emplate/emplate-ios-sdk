@@ -31,11 +31,12 @@ typedef void (^EMPObjectsBlock)(RLMResults *objects, NSError *error);
  */
 typedef void (^EMPErrorBlock)(NSError *error);
 
-typedef enum {
-    EMPImageSizeThumbnail = 1,
+typedef NS_ENUM(NSInteger, EMPImageSize) {
+    EMPImageSizeOriginal = 1,
+    EMPImageSizeLarge,
     EMPImageSizeMobile,
-    EMPImageSizeFull
-} EMPImageSize;
+    EMPImageSizeThumbnail
+};
 
 typedef enum {
     EMPApiEnvironmentNone = 0,

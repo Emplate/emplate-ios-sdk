@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface EMPPostFieldImages : NSObject
 
 #pragma mark - Properties
-@property (readonly, nullable) NSArray<NSURL *>*images;
 @property (readonly, nullable) NSString *text;
 
 #pragma mark - Methods

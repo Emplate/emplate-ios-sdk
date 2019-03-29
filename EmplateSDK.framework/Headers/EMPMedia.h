@@ -31,17 +31,25 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property int height;
 /**
- The url to the image (as string)
+ The url to the image in original size (as string)
  */
-@property NSString *urlString;
+@property NSString *urlOriginal;
+/**
+ The url to the image in large size (as string)
+ */
+@property (nullable) NSString *urlLarge;
+/**
+ The url to the image in mobile size (as string)
+ */
+@property (nullable) NSString *urlMobile;
+/**
+ The url to the image in thumbnail size (as string)
+ */
+@property (nullable) NSString *urlThumbnail;
 /**
  The url to the image
  */
-@property (readonly) NSURL *url;
-/**
- The url to the image
- */
-- (NSURL *)urlWithSize:(EMPImageSize)imageSize;
+- (NSURL *)urlInSize:(EMPImageSize)imageSize;
 /**
  The aspecet ratio of the image
  */

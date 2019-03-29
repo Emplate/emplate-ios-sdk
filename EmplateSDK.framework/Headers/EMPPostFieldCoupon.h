@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface EMPPostFieldCoupon : NSObject
 
 #pragma mark - Properties
-@property (readonly) NSURL *image;
 @property (readonly, nullable) NSString *text;
 @property (readonly, nullable) NSString *priceBefore;
 @property (readonly, nullable) NSString *price;

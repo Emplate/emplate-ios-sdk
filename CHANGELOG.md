@@ -1,4 +1,7 @@
 # Change Log
+## 4.0.0 (2019-03-29)
+* Updated API version
+
 ## 3.6.9 (2019-02-20)
 * Updated Realm requirement
 

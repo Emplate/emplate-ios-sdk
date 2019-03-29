@@ -3,7 +3,7 @@
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/EMPDefines.h",
       "line": 34,
-      "symbol": "",
+      "symbol": "EMPImageSize",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
@@ -16,14 +16,14 @@
     },
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/EMPDefines.h",
-      "line": 40,
+      "line": 41,
       "symbol": "",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/EMPDefines.h",
-      "line": 40,
+      "line": 41,
       "symbol": "EMPApiEnvironment",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
@@ -38,7 +38,7 @@
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 26,
-      "symbol": "EMPApiClient.baseURLV6",
+      "symbol": "EMPApiClient.baseURLV7",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
@@ -268,7 +268,7 @@
     },
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPMedia.h",
-      "line": 52,
+      "line": 60,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"

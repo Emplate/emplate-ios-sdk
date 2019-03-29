@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface EMPApiClient : NSObject
 
 @property (readonly) NSURL *baseURL;
-@property (readonly) NSURL *baseURLV6;
+@property (readonly) NSURL *baseURLV7;
 @property (readonly) NSURLSession *urlSession;
 
 #pragma mark - Api environment

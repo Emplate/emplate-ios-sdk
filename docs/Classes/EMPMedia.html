@@ -296,9 +296,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EMPMedia(py)urlString"></a>
-                    <a name="//apple_ref/objc/Property/urlString" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EMPMedia(py)urlString">urlString</a>
+                    <a name="/c:objc(cs)EMPMedia(py)urlOriginal"></a>
+                    <a name="//apple_ref/objc/Property/urlOriginal" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMPMedia(py)urlOriginal">urlOriginal</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -306,19 +306,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The url to the image (as string)</p>
+                        <p>The url to the image in original size (as string)</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">urlString</span><span class="p">;</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">urlOriginal</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">urlString</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">urlOriginal</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -328,9 +328,105 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EMPMedia(py)url"></a>
-                    <a name="//apple_ref/objc/Property/url" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EMPMedia(py)url">url</a>
+                    <a name="/c:objc(cs)EMPMedia(py)urlLarge"></a>
+                    <a name="//apple_ref/objc/Property/urlLarge" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMPMedia(py)urlLarge">urlLarge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The url to the image in large size (as string)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">urlLarge</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">urlLarge</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMPMedia(py)urlMobile"></a>
+                    <a name="//apple_ref/objc/Property/urlMobile" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMPMedia(py)urlMobile">urlMobile</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The url to the image in mobile size (as string)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">urlMobile</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">urlMobile</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMPMedia(py)urlThumbnail"></a>
+                    <a name="//apple_ref/objc/Property/urlThumbnail" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMPMedia(py)urlThumbnail">urlThumbnail</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The url to the image in thumbnail size (as string)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">urlThumbnail</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">urlThumbnail</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EMPMedia(im)urlInSize:"></a>
+                    <a name="//apple_ref/objc/Method/-urlInSize:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EMPMedia(im)urlInSize:">-urlInSize:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -345,44 +441,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">url</span><span class="p">;</span></code></pre>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nf">urlInSize</span><span class="p">:(</span><span class="n">EMPImageSize</span><span class="p">)</span><span class="nv">imageSize</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)EMPMedia(im)urlWithSize:"></a>
-                    <a name="//apple_ref/objc/Method/-urlWithSize:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EMPMedia(im)urlWithSize:">-urlWithSize:</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The url to the image</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nf">urlWithSize</span><span class="p">:(</span><span class="n">EMPImageSize</span><span class="p">)</span><span class="nv">imageSize</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">url</span><span class="p">(</span><span class="n">with</span> <span class="nv">imageSize</span><span class="p">:</span> <span class="kt">EMPImageSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">url</span><span class="p">(</span><span class="k">in</span> <span class="nv">imageSize</span><span class="p">:</span> <span class="kt">EMPImageSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span></code></pre>
 
                         </div>
                       </div>
