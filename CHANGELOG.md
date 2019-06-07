@@ -1,4 +1,7 @@
 # Change Log
+## 5.0.0 (2019-06-07)
+* Updated API version
+
 ## 4.0.0 (2019-03-29)
 * Updated API version
 

@@ -38,7 +38,7 @@
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Managers/EMPApiClient.h",
       "line": 26,
-      "symbol": "EMPApiClient.baseURLV7",
+      "symbol": "EMPApiClient.baseURLV8",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
@@ -282,7 +282,7 @@
     },
     {
       "file": "/Users/soren/Git/emplate-ios-sdk-source/EmplateSDK/Models/EMPPost.h",
-      "line": 99,
+      "line": 95,
       "symbol": "RLM_ARRAY_TYPE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"

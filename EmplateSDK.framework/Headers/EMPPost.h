@@ -51,9 +51,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property BOOL collectible;
 /**
- The name of the post
+ The required parameters for collectible posts
  */
-@property (nullable) NSString *questionsJSON;
+@property (nullable) NSString *parametersJSON;
 /**
  The beacon object(s) the post is assigned to
 
@@ -89,10 +89,6 @@ NS_ASSUME_NONNULL_BEGIN
  @see EMPPostPeriod
  */
 @property (readonly) BOOL active;
-/**
- A list of all questions for the post
- */
-@property (readonly) NSArray<NSString *> *questions;
 
 @end
 NS_ASSUME_NONNULL_END
